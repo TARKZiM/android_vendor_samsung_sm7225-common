@@ -8,7 +8,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.hardware.btconfigstore@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.btconfigstore@2.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera2ndk_vendor.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsomxflacd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxflacd.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsuper_night_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsuper_night_interface.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libhfp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhfp.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libqmi_common_so.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_common_so.so \
@@ -25,9 +24,7 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCB.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcvp_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvp_common.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.samsung.hardware.snap@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.snap@1.0.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_soft_aacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_aacdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcodec2_sec_amrwbdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_sec_amrwbdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcmaputils.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqrtr.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libOmxApeDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxApeDec.so \
@@ -38,7 +35,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.samsung.hardware.tlc.ucm@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.tlc.ucm@2.0-impl.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libgcs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libgnsspps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgnsspps.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_soft_flacenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_flacenc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-qcom.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdp.so \
@@ -47,7 +43,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libqfp_sensortest.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqfp_sensortest.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libuniplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libuniplugin.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsomxcore_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxcore_vendor.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libhypervintf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhypervintf.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2vop.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libIDDQD_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libIDDQD_core.so \
@@ -56,21 +51,17 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libnbaio_mono.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnbaio_mono.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libFaceService.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFaceService.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libqmi_client_qmux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_qmux.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcodecsolutionhelper_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodecsolutionhelper_vendor.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnpe_dsp_domains_v2.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.scve.panorama@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libapex_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libapex_utils.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsi.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcodec2_hidl@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl@1.0.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_soft_aacenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_aacenc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtzdrmgenprov.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libHprFace_GAE_api.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libHprFace_GAE_api.camera.samsung.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxswprocessalgo.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioparsers.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libfastrpc_utf_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastrpc_utf_stub.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcodec2_sec_soft_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_sec_soft_common.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libhbtpfrmwk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhbtpfrmwk.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libwifi-hal-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwifi-hal-qcom.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker.so \
@@ -81,7 +72,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libjpegQtable_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegQtable_interface.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsystem_health_mon.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.gnss@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@2.1.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrighthw.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libgcs-ipc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-ipc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqseed3.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
@@ -89,15 +79,10 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbatching.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libdualcam_refocus_image.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_refocus_image.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcodec2_sec_mp4vdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_sec_mp4vdec.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_soft_mpeg2dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_mpeg2dec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.3.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.tui_comm@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libjson.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjson.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_soft_mpeg4enc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_mpeg4enc.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libSecC2ComponentStore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSecC2ComponentStore.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmulawdec.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_soft_hevcdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_hevcdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/android.hardware.audio.common-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common-util.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libwpa_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwpa_client.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@1.0-impl.so \
@@ -105,12 +90,10 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.1.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/lib_SoundAlive_AlbumArt_ver105.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SoundAlive_AlbumArt_ver105.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcpion.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcodec2_hidl@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl@1.1.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libdpps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdpps.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/camera.device@3.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.4-impl.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsp_default_listener.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libplatformconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libplatformconfig.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_bufferqueue_helper_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_bufferqueue_helper_vendor.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsynaFpSensorTestNwd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsynaFpSensorTestNwd.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxWmaDec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcvpcpuRev_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvpcpuRev_skel.so \
@@ -118,17 +101,13 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libprotobuf-cpp-full-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-full-3.9.1.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libOmxApeDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxApeDecSw.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsec2qc_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec2qc_conversion.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_soft_gsmdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_gsmdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayqos.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.hardware.data.connection@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.connection@1.1.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.display.color@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.4.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libOmxSwVencMpeg4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxSwVencMpeg4.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_fastRPC_util.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_soft_ac4dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_ac4dec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libFacePreProcessing.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFacePreProcessing.camera.samsung.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcodec2_sec_vc1dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_sec_vc1dec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.hardware.cryptfshw@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.cryptfshw@1.0.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_flacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_flacdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.samsung.hardware.tlc.hdm@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.tlc.hdm@1.1-impl.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdmapper.so \
@@ -138,7 +117,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsavscmn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsavscmn.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libStDrvInt.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_soft_ddpdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_ddpdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libimagecodec_native.quram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimagecodec_native.quram.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libaudio_soundtrigger.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_soundtrigger.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.samsung.hardware.radio.bridge@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.radio.bridge@2.0.so \
@@ -159,25 +137,20 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui_svcsock.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsautils.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcld80211.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcld80211.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_soft_vpxenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_vpxenc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libC2D2.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libhand_interaction.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhand_interaction.uniplugin@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsd2pcm.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcodec2_vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_vndk.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/android.hardware.audio.common@6.0-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@6.0-util.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.samsung.hardware.security.proca@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.security.proca@2.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/camera.device@3.5-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.5-impl.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libbt-hidlclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-hidlclient.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_enc_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_enc_common.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbrtac.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsnamrwb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnamrwb.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsomx263dsw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomx263dsw.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libadm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadm.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcryptfshwcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcryptfshwcommon.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libqti-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-utils.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsomxadpcmd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxadpcmd.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libremosaic_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libremosaic_daemon.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFlacSwDec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsnamrnb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnamrnb.so \
@@ -185,8 +158,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@2.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libarcsoft_picportrait_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_picportrait_video.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSecureUILib.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_soft_mp3dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_mp3dec.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libOmxVdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_low_lat_stream_stub.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsamsungVoipResampler.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsamsungVoipResampler.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
@@ -207,7 +178,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/android.hardware.camera.provider@2.5-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.5-legacy.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcirrusspkrprot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcirrusspkrprot.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libdiagjni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiagjni.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_soft_g711dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_g711dec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.samsung.hardware.camera.provider@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.camera.provider@4.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-hdcpmgr.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.samsung.hardware.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.gnss@2.0.so \
@@ -223,19 +193,15 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libarcsoft_super_night_raw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_super_night_raw.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsemnativecarrierfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsemnativecarrierfeature.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdedrm.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcodec2_sec_aacenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_sec_aacenc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbtnv.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/android.hardware.audio.common@2.0-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@2.0-util.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.samsung.hardware.hyper-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.hyper-V1-ndk_platform.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libjpegencoder_sw.unifunc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegencoder_sw.unifunc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsomxmp4vdsw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxmp4vdsw.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.3.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libOmxDsdDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxDsdDec.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_soft_opusdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_opusdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libloc_socket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_socket.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libOmxAlacDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAlacDecSw.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libOmxG711Enc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxG711Enc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libucm_tlc_direct_comm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libucm_tlc_direct_comm.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperipheral_client.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libhdmiedid.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdmiedid.so \
@@ -302,14 +268,12 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.hardware.qccvndhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qccvndhal@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc++_shared.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vintf-codecsolution-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/vintf-codecsolution-V1-ndk_platform.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libhta.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhta.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfconfig.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libnpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnpu.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.samsung.camera.device@5.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.camera.device@5.0-impl.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.scve.objecttracker@1.0.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libOmxAacEnc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAacEnc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libbeautyshot.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbeautyshot.arcsoft.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libadpcmdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadpcmdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libhta_hexagon_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhta_hexagon_runtime.so \
@@ -326,9 +290,7 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsecfr_model.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecfr_model.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.hardware.perf@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.perf@2.2.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_soft_vpxdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_vpxdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libpredeflicker_native.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpredeflicker_native.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcodec2_sec_imadec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_sec_imadec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libdualcapture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcapture.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libwifi-hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwifi-hal.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libfocuspeaking.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfocuspeaking.so \
@@ -338,8 +300,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libscaler_hw.unifunc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscaler_hw.unifunc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libFace_Landmark_API.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFace_Landmark_API.camera.samsung.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libOpenCv.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCv.camera.samsung.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcodec2_soft_eac3dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_soft_eac3dec.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsomx264dsw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomx264dsw.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjnihelper.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libqmi_cci.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_cci.so \
@@ -365,11 +325,9 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmtime.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libucm_tlc_tz_esecomm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libucm_tlc_tz_esecomm.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/android.hardware.sensors@2.0-ScopedWakelock.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.sensors@2.0-ScopedWakelock.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsomxhevcdsw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxhevcdsw.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/android.hardware.automotive.vehicle@2.0-manager-lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.automotive.vehicle@2.0-manager-lib.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libfloatingfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfloatingfeature.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libmm-omxcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-omxcore.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblbs_core.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_api_v02.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc_default_listener.so \
@@ -456,16 +414,13 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQSEEComAPI.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsegmentationeffect.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsegmentationeffect.uniplugin@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libLocalTM_wrapper.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libLocalTM_wrapper.camera.samsung.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_soft_rawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_rawdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.hardware.data.dynamicdds@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.dynamicdds@1.0.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_softomx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_softomx.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_log_utils.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libOmxSwVdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxSwVdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libgnss.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgnss.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.dsp@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libc2dcolorconvert.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2dcolorconvert.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.samsung.hardware.hqm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.hqm@1.0.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsomxamrd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxamrd.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/sensors.grip.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.grip.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libfastcrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcrc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.samsung.hardware.bluetooth@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.bluetooth@2.0.so \
@@ -473,13 +428,11 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcamxfdalgov7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdalgov7.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker_stub.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfgluelayer.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libOmxAmrEnc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAmrEnc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/android.hardware.camera.provider@2.4-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.4-legacy.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcp1prov.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsecnativefeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecnativefeature.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsomxvc1dsw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxvc1dsw.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.gnss@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@3.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsnpe_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnpe_wrapper.so \
@@ -489,7 +442,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtime_genoff.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libhypermotion_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhypermotion_core.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcvp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvp_stub.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_soft_avcdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_avcdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPreqcancel.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/lib_SoundBooster_ver1050.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SoundBooster_ver1050.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsdm-disp-vndapis.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-disp-vndapis.so \
@@ -507,16 +459,13 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libOmxBlackBar.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxBlackBar.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libvdis_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvdis_interface.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.samsung.hardware.tlc.hdm@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.tlc.hdm@1.1.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_soft_vorbisdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_vorbisdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsubsystem_control.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcacertclient.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libhwbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhwbinder.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libOmxEvrcEnc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxEvrcEnc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.1.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsoc_helper_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsoc_helper_jni.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.samsung.hardware.tlc.ucm@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.tlc.ucm@2.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsensorlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorlistener.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsomxmp3d.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxmp3d.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhidltransport.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.perf@2.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libvideobeauty_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideobeauty_interface.so \
@@ -528,14 +477,10 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/camera.device@3.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.3-impl.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libvndfwk_detect_jni.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvndfwk_detect_jni.qti.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_common.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsomxcmn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxcmn.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsmemlog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmemlog.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libfocuspeaking_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfocuspeaking_interface.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_soft_amrdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_amrdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/lib_SamsungRec_07010.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SamsungRec_07010.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libOmxQcelp13Enc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxQcelp13Enc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libimage_enhancement.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimage_enhancement.arcsoft.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_amrnb_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_amrnb_common.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libHMT.so:$(TARGET_COPY_OUT_VENDOR)/lib/libHMT.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.data.mwqem@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.mwqem@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_core.so \
@@ -561,11 +506,8 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libaudiofoundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiofoundation.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPTEE_vendor.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libgf_in_system_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_in_system_lib.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcodec2_sec_mp3dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_sec_mp3dec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libqti_vndfwk_detect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti_vndfwk_detect.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libhigh_dynamic_range.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhigh_dynamic_range.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcodec2_sec_amrnbdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_sec_amrnbdec.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_bufferpool@2.0.1.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libspeakercalibration.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeakercalibration.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libvideobeauty.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideobeauty.uniplugin@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libllhdr_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllhdr_interface.so \
@@ -582,7 +524,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdr_tm.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libegis_fp_normal_sensor_test.so:$(TARGET_COPY_OUT_VENDOR)/lib/libegis_fp_normal_sensor_test.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_soft_amrnbenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_amrnbenc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/liba2dpoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib/liba2dpoffload.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libdualcam_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_optical_zoom.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_adreno.so \
@@ -608,23 +549,18 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libarbitrarybytes.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarbitrarybytes.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/librecordalive.so:$(TARGET_COPY_OUT_VENDOR)/lib/librecordalive.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcvp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvp.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcodec2_sec_flacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_sec_flacdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/unnhal-acc-hta.so:$(TARGET_COPY_OUT_VENDOR)/lib/unnhal-acc-hta.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsmartfocus_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmartfocus_interface.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vndk/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libstagefright_foundation.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libqmi_client_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_helper.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libdualcam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_optical_zoom_control.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPreqcancel_svc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcc_file_agent.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/librmnetctl.so:$(TARGET_COPY_OUT_VENDOR)/lib/librmnetctl.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_soft_amrwbenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_amrwbenc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcryptfshwhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcryptfshwhidl.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/librmp.so:$(TARGET_COPY_OUT_VENDOR)/lib/librmp.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libOmxAmrwbplusDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAmrwbplusDec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/mediacas/libclearkeycasplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediacas/libclearkeycasplugin.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcodec2_soft_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_soft_common.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libOmxVenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVenc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswregistrationalgo.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadiertac.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-color-convertor.so \
@@ -632,14 +568,10 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libface_landmark.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib/libface_landmark.arcsoft.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcom.qti.chinodeutils.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libvpx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpx.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_soft_flacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_flacdec.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_soft_mpeg4dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_mpeg4dec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libnative-api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnative-api.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/liblivefocus_preview_engine.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblivefocus_preview_engine.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libOmxCore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxCore.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libopus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libopus.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libbauthtzcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbauthtzcommon.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcodec2_soft_ac4dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_soft_ac4dec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioalsa.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsynergy_loc_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsynergy_loc_api.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/soundfx/libmyspace.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libmyspace.so \
@@ -672,7 +604,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioconfigstore.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libspkrprot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspkrprot.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/lib_SoundAlive_play_plus_ver500.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SoundAlive_play_plus_ver500.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsfplugin_ccodec_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsfplugin_ccodec_utils.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsecure_storage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecure_storage.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsdm-diag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-diag.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libvorbisidec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvorbisidec.so \
@@ -683,11 +614,9 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/liblivefocus_preview_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblivefocus_preview_interface.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/carwatchdog_aidl_interface-V2-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/carwatchdog_aidl_interface-V2-ndk_platform.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libhigh_dynamic_range_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhigh_dynamic_range_bokeh.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcodec2_simple_component.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_simple_component.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/liblocation_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocation_api.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbase64.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csi.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_soft_avcenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_avcenc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsp_default_listener.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.gnss@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@4.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.samsung.hardware.audio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.audio@1.0.so \
@@ -718,7 +647,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/liboemaids_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemaids_vendor.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/lib_soundaliveresampler.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_soundaliveresampler.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libqsap_sdk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqsap_sdk.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_softomx_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_softomx_plugin.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libSEF.quram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSEF.quram.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxtintlessalgo.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpbase.so \
@@ -727,7 +655,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libconfigdb.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.gnss@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@1.2.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.0.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsomxnaace.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxnaace.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libLocalTM_capture_core.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libLocalTM_capture_core.camera.samsung.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/liblow_light_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblow_light_hdr.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libdualcam_refocus_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_refocus_video.so \
@@ -738,12 +665,10 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcp2p2prov.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libsomxvp8d.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxvp8d.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libhqm_hwparam.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhqm_hwparam.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-calwrapper.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svacnn.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libperfioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfioctl.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libstagefright_omx_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_omx_vendor.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/firmware/ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b02 \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/firmware/crbtfw21.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/crbtfw21.tlv \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/firmware/a630_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a630_sqe.fw \
@@ -778,7 +703,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_codecs_ac4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_ac4.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/mixer_usb_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_default.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/plmn_se13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13.bin \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
@@ -786,7 +710,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/seccomp_policy/mediaextractor_sec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor_sec.policy \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/sound_trigger_mixer_paths_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_qrd.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_configs_stock.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_configs_stock.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/portrait_data/single_bokeh_feature.json:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/single_bokeh_feature.json \
@@ -796,9 +719,7 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/hbtp/loader.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/loader.cfg \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/mixer_paths_wcd937x.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_wcd937x.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/fs_config_dirs:$(TARGET_COPY_OUT_VENDOR)/etc/fs_config_dirs \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/mixer_paths_wcd937xqrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_wcd937xqrd.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_codecs_ddp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_ddp.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/nfc/sec_s3nrn4v_hwreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/sec_s3nrn4v_hwreg.bin \
@@ -806,19 +727,14 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/singletake/bestmoment/facedetV2.polarr.db:$(TARGET_COPY_OUT_VENDOR)/etc/singletake/bestmoment/facedetV2.polarr.db \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/singletake/bestmoment/facedetV3.polarr.db:$(TARGET_COPY_OUT_VENDOR)/etc/singletake/bestmoment/facedetV3.polarr.db \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/singletake/bestmoment/scoreV2.polarr.db:$(TARGET_COPY_OUT_VENDOR)/etc/singletake/bestmoment/scoreV2.polarr.db \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_codecs_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/somxreg.conf:$(TARGET_COPY_OUT_VENDOR)/etc/somxreg.conf \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hearing_aid_audio_policy_configuration.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/VslMesDetector/MesDetectorNoise.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/VslMesDetector/MesDetectorNoise.tflite \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/VslMesDetector/MesDetectorBlur.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/VslMesDetector/MesDetectorBlur.tflite \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/VslMesDetector/MesDetectorLowlight.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/VslMesDetector/MesDetectorLowlight.tflite \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_codecs_google_c2_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_video.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/mixer_paths_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_qrd.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_effects_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_sec.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
@@ -846,7 +762,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/saiv/image_understanding/db/aic_detector/aic_detector_cnn.info:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/image_understanding/db/aic_detector/aic_detector_cnn.info \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/saiv/image_understanding/db/aic_detector/aic_detector_cnn.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/image_understanding/db/aic_detector/aic_detector_cnn.dlc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/saiv/fd/fast_face_detect_model_full_angle_16_CHAR.dat:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/fd/fast_face_detect_model_full_angle_16_CHAR.dat \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_codecs_c2_sec_qcp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_sec_qcp.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/sec.android.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/sec.android.hardware.nfc@1.2-service.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/snap_utility.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/snap_utility.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider@4.0-service.rc \
@@ -868,7 +783,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.authfw@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.authfw@1.0-service.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/android.hardware.media.omx@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.omx@1.0-service.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.tlc.kg@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.tlc.kg@1.0-service.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/android.hardware.dumpstate@1.1-service-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.dumpstate@1.1-service-lazy.rc \
@@ -877,7 +791,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.security.engmode@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.security.engmode@1.0-service.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.media.converter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.media.converter@1.0-service.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@2.2-service.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.tlc.iccc@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.tlc.iccc@1.0-service.rc \
@@ -1005,7 +918,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/sensors/config/sns_gyro_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_gyro_cal.json \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/sensors/config/sns_tilt_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_disabled.json \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/sensors/config/sns_ccd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd.json \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_codecs_sec_qcp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_sec_qcp.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
@@ -1013,14 +925,11 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/fs_config_files:$(TARGET_COPY_OUT_VENDOR)/etc/fs_config_files \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/traceconfig.txt:$(TARGET_COPY_OUT_VENDOR)/etc/traceconfig.txt \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/libnfc-qrd-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100.conf \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/dax3_media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dax3_media_codecs_dolby_audio.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/config_chipset.json:$(TARGET_COPY_OUT_VENDOR)/etc/config_chipset.json \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_codecs_google_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_audio.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/carrier/version.json:$(TARGET_COPY_OUT_VENDOR)/etc/carrier/version.json \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/carrier/target_carrier_features:$(TARGET_COPY_OUT_VENDOR)/etc/carrier/target_carrier_features \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/mtu-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtu-conf.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/beauty/settings.dat:$(TARGET_COPY_OUT_VENDOR)/etc/beauty/settings.dat \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_codecs_sec_video_primary.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_sec_video_primary.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/mkshrc:$(TARGET_COPY_OUT_VENDOR)/etc/mkshrc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_configs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_configs.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
@@ -1030,12 +939,9 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/floating_feature.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_codecs_google_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/snap_gpu_kernel_64.bin:$(TARGET_COPY_OUT_VENDOR)/etc/snap_gpu_kernel_64.bin \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_policy_configuration_base.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_base.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/passwd:$(TARGET_COPY_OUT_VENDOR)/etc/passwd \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/sensorhub_services.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensorhub_services.json \
@@ -1062,16 +968,9 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/wlan_common_rc:$(TARGET_COPY_OUT_VENDOR)/etc/wlan_common_rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/plmn_delta_usagsm.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_usagsm.bin \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_codecs_sec_primary.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_sec_primary.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_codecs_c2_sec_ape.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_sec_ape.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_codecs_sec_ape.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_sec_ape.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.vulkan.compute-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute-0.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.uicc.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepcounter.xml \
@@ -1115,14 +1014,11 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100_38_4MHZ.conf \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/pdpcnt-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pdpcnt-conf.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/ev_lux_map_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ev_lux_map_config.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100_38_4MHZ.conf \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/mercury.json:$(TARGET_COPY_OUT_VENDOR)/etc/mercury.json \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/media_codecs_c2_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_sec.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/playback_record_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/playback_record_audio_policy_configuration.xml \
@@ -1144,7 +1040,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.qti.hardware.btconfigstore@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.btconfigstore@2.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera2ndk_vendor.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.biometrics.fingerprint@3.0.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsomxflacd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxflacd.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsnap_v1.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnap_v1.samsung.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsuper_night_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsuper_night_interface.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libqmi_common_so.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_common_so.so \
@@ -1165,7 +1060,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libkeystore-engine-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-engine-wifi-hidl.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libtlc_direct_comm_iccc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtlc_direct_comm_iccc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvopt.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcodec2_sec_amrwbdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_sec_amrwbdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcmaputils.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqrtr.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libOmxApeDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxApeDec.so \
@@ -1187,7 +1081,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libqfp_sensortest.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqfp_sensortest.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libuniplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libuniplugin.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsomxcore_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxcore_vendor.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libhypervintf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhypervintf.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2vop.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/unnhal-acc-hvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-hvx.so \
@@ -1197,12 +1090,10 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libnbaio_mono.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnbaio_mono.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libFaceService.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFaceService.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libqmi_client_qmux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_client_qmux.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcodecsolutionhelper_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodecsolutionhelper_vendor.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_dsp_domains_v2.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.scve.panorama@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsi.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcodec2_hidl@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_hidl@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libhexagon_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhexagon_nn_stub.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtzdrmgenprov.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libHprFace_GAE_api.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libHprFace_GAE_api.camera.samsung.so \
@@ -1210,7 +1101,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigef.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioparsers.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libfastrpc_utf_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastrpc_utf_stub.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcodec2_sec_soft_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_sec_soft_common.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libhbtpfrmwk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhbtpfrmwk.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libwifi-hal-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal-qcom.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker.so \
@@ -1222,7 +1112,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.qti.gnss@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@2.1.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libkeymaster_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_helper.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrighthw.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.wifi@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.wifi@2.1.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libgcs-ipc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs-ipc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqseed3.so \
@@ -1231,14 +1120,12 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmiservices.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatching.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libdualcam_refocus_image.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_refocus_image.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcodec2_sec_mp4vdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_sec_mp4vdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libhyper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhyper.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec-ril.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.3.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.security.vaultkeeper@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.security.vaultkeeper@2.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.tui_comm@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libjson.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjson.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libSecC2ComponentStore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSecC2ComponentStore.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmulawdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.wifi@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.wifi@2.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/android.hardware.audio.common-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common-util.so \
@@ -1250,7 +1137,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/lib_SoundAlive_AlbumArt_ver105.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_SoundAlive_AlbumArt_ver105.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcpion.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.miscpower@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.miscpower@2.0.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcodec2_hidl@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_hidl@1.1.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libdpps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpps.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/camera.device@3.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.4-impl.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsp_default_listener.so \
@@ -1271,9 +1157,7 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_fastRPC_util.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.tlc.blockchain@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.tlc.blockchain@1.0-impl.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libFacePreProcessing.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFacePreProcessing.camera.samsung.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcodec2_sec_vc1dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_sec_vc1dec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.qti.hardware.cryptfshw@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.cryptfshw@1.0.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libstagefright_flacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_flacdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdsprpc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.tlc.hdm@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.tlc.hdm@1.1-impl.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdmapper.so \
@@ -1310,7 +1194,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libhand_interaction.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhand_interaction.uniplugin@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libengmode_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libengmode_client.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcodec2_vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vndk.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/android.hardware.audio.common@6.0-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@6.0-util.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.security.proca@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.security.proca@2.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/camera.device@3.5-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.5-impl.so \
@@ -1318,13 +1201,10 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbrtac.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsnamrwb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnamrwb.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.media.converter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.media.converter@1.0.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsomx263dsw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomx263dsw.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcryptfshwcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcryptfshwcommon.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libqti-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-utils.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.tlc.payment@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.tlc.payment@1.0.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsomxadpcmd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxadpcmd.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libremosaic_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_daemon.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFlacSwDec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsnamrnb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnamrnb.so \
@@ -1333,7 +1213,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libarcsoft_picportrait_video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_picportrait_video.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSecureUILib.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libtlc_comm_kgta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtlc_comm_kgta.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libOmxVdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxVdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_low_lat_stream_stub.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswvdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudcal.so \
@@ -1370,17 +1249,14 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libarcsoft_super_night_raw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_super_night_raw.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsemnativecarrierfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsemnativecarrierfeature.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdedrm.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcodec2_sec_aacenc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_sec_aacenc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/android.hardware.audio.common@2.0-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@2.0-util.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.hyper-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.hyper-V1-ndk_platform.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libjpegencoder_sw.unifunc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpegencoder_sw.unifunc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsomxmp4vdsw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxmp4vdsw.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.3.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libloc_socket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_socket.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libOmxAlacDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAlacDecSw.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libOmxG711Enc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxG711Enc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libkeystore-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-wifi-hidl.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libucm_tlc_direct_comm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libucm_tlc_direct_comm.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libnlnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnlnetmgr.so \
@@ -1433,7 +1309,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/hw/lights.atoll.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/lights.atoll.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpudataproducer.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalclient.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libmediaconverter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmediaconverter.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.qti.hardware.data.connection@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.connection@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.camera.provider@4.0-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.camera.provider@4.0-legacy.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
@@ -1448,7 +1323,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libtlc_comm_atn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtlc_comm_atn.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbloader.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vintf-codecsolution-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vintf-codecsolution-V1-ndk_platform.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libhta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfconfig.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libnpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnpu.so \
@@ -1457,7 +1331,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libOmxAacEnc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAacEnc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libbeautyshot.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbeautyshot.arcsoft.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libhta_hexagon_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta_hexagon_runtime.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsec-ril-dsds.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec-ril-dsds.so \
@@ -1476,7 +1349,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libkeymaster4support.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster4support.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.qti.hardware.perf@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.perf@2.2.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.tlc.iccc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.tlc.iccc@1.0.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcodec2_sec_imadec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_sec_imadec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libdualcapture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcapture.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libwifi-hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal.so \
@@ -1487,9 +1359,7 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libscaler_hw.unifunc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscaler_hw.unifunc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libFace_Landmark_API.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFace_Landmark_API.camera.samsung.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libOpenCv.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCv.camera.samsung.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcodec2_soft_eac3dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_eac3dec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsume_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsume_core.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsomx264dsw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomx264dsw.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnihelper.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libqmi_cci.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_cci.so \
@@ -1516,11 +1386,9 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libucm_tlc_tz_esecomm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libucm_tlc_tz_esecomm.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/android.hardware.sensors@2.0-ScopedWakelock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.sensors@2.0-ScopedWakelock.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.security.drk@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.security.drk@2.0.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsomxhevcdsw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxhevcdsw.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/android.hardware.automotive.vehicle@2.0-manager-lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.automotive.vehicle@2.0-manager-lib.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libfloatingfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfloatingfeature.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libmm-omxcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-omxcore.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblbs_core.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_v02.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc_default_listener.so \
@@ -1595,26 +1463,22 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsegmentationeffect.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsegmentationeffect.uniplugin@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libLocalTM_wrapper.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libLocalTM_wrapper.camera.samsung.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libstagefright_softomx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_softomx.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libOmxSwVdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxSwVdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libgnss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnss.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dsp@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libc2dcolorconvert.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2dcolorconvert.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.hqm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.hqm@1.0.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsomxamrd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxamrd.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/sensors.grip.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.grip.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.bluetooth@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.bluetooth@2.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.radio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio@2.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcamxfdalgov7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgov7.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker_stub.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfgluelayer.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libOmxAmrEnc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAmrEnc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/android.hardware.camera.provider@2.4-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.4-legacy.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcci_legacy.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp1prov.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsprpc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsecnativefeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecnativefeature.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsomxvc1dsw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxvc1dsw.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.qti.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libkeymaster_portable.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_portable.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libtlc_comm_iccc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtlc_comm_iccc.so \
@@ -1650,12 +1514,10 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcacertclient.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libhwbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwbinder.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.wifi.supplicant@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.wifi.supplicant@3.0.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libOmxEvrcEnc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxEvrcEnc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.1.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsoc_helper_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsoc_helper_jni.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.tlc.ucm@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.tlc.ucm@2.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsensorlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorlistener.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsomxmp3d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxmp3d.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidltransport.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.perf@2.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libvideobeauty_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideobeauty_interface.so \
@@ -1669,11 +1531,9 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/camera.device@3.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.3-impl.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libvndfwk_detect_jni.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvndfwk_detect_jni.qti.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_common.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsomxcmn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxcmn.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsmemlog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsmemlog.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libfocuspeaking_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfocuspeaking_interface.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.authfw@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.authfw@1.0.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libOmxQcelp13Enc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxQcelp13Enc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsnaplite_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnaplite_wrapper.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libimage_enhancement.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimage_enhancement.arcsoft.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libHMT.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libHMT.so \
@@ -1688,12 +1548,9 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPTEE_vendor.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libnanopb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnanopb.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libgf_in_system_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_in_system_lib.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcodec2_sec_mp3dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_sec_mp3dec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libqti_vndfwk_detect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti_vndfwk_detect.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libipanat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipanat.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libhigh_dynamic_range.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhigh_dynamic_range.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcodec2_sec_amrnbdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_sec_amrnbdec.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_bufferpool@2.0.1.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libdk_vnd_service_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdk_vnd_service_core.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libspeakercalibration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspeakercalibration.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/liboffloadhal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboffloadhal.so \
@@ -1740,10 +1597,8 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libarbitrarybytes.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarbitrarybytes.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsnap_compute_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnap_compute_wrapper.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcvp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcodec2_sec_flacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_sec_flacdec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/unnhal-acc-hta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-hta.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsmartfocus_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsmartfocus_interface.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vndk/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vndk/libstagefright_foundation.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libqmi_client_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_client_helper.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libdualcam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_optical_zoom_control.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel_svc.so \
@@ -1755,8 +1610,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/librmp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librmp.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libOmxAmrwbplusDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAmrwbplusDec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/mediacas/libclearkeycasplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediacas/libclearkeycasplugin.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcodec2_soft_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_common.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libOmxVenc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxVenc.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadiertac.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-color-convertor.so \
@@ -1766,9 +1619,7 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.wifi.hostapd@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.wifi.hostapd@3.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libnative-api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnative-api.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/liblivefocus_preview_engine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblivefocus_preview_engine.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libOmxCore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxCore.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libbauthtzcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbauthtzcommon.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcodec2_soft_ac4dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_ac4dec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioalsa.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsynergy_loc_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynergy_loc_api.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/soundfx/libmyspace.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libmyspace.so \
@@ -1799,7 +1650,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioconfigstore.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/lib_SoundAlive_play_plus_ver500.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_SoundAlive_play_plus_ver500.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.vibrator-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.vibrator-V1-ndk_platform.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsfplugin_ccodec_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsfplugin_ccodec_utils.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsecure_storage.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecure_storage.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsdm-diag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-diag.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/lib_SoundAlive_3DPosition_ver202.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_SoundAlive_3DPosition_ver202.so \
@@ -1811,7 +1661,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.thermal@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/carwatchdog_aidl_interface-V2-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/carwatchdog_aidl_interface-V2-ndk_platform.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libhigh_dynamic_range_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhigh_dynamic_range_bokeh.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcodec2_simple_component.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_simple_component.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/liblocation_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocation_api.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbase64.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_csi.so \
@@ -1857,7 +1706,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconfigdb.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.qti.gnss@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.2.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.0.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsomxnaace.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxnaace.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libLocalTM_capture_core.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libLocalTM_capture_core.camera.samsung.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/liblow_light_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblow_light_hdr.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libvdis_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvdis_core.so \
@@ -1869,7 +1717,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblqe.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libnetfilter_conntrack.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetfilter_conntrack.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libsomxvp8d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxvp8d.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libhqm_hwparam.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhqm_hwparam.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs-calwrapper.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svacnn.so \
@@ -1899,7 +1746,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/add.pb:$(TARGET_COPY_OUT_VENDOR)/bin/add.pb \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/qdcmss:$(TARGET_COPY_OUT_VENDOR)/bin/qdcmss \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/mm-vidc-omx-test:$(TARGET_COPY_OUT_VENDOR)/bin/mm-vidc-omx-test \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/athdiag:$(TARGET_COPY_OUT_VENDOR)/bin/athdiag \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/subsystem_ramdump:$(TARGET_COPY_OUT_VENDOR)/bin/subsystem_ramdump \
@@ -1944,7 +1790,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/capabilityconfigstoretest:$(TARGET_COPY_OUT_VENDOR)/bin/hw/capabilityconfigstoretest \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/android.hardware.sensors@2.0-service.multihal:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@2.0-service.multihal \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/vendor.samsung.hardware.media.converter@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.media.converter@1.0-service \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qseecom@1.0-service \
@@ -1961,7 +1806,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/mfgloader:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mfgloader \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/android.hardware.cas@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.cas@1.2-service \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/android.hardware.media.omx@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.omx@1.0-service \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/android.hardware.audio.service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio.service \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/macloader:$(TARGET_COPY_OUT_VENDOR)/bin/hw/macloader \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/vendor.samsung.hardware.snap@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.snap@1.2-service \
