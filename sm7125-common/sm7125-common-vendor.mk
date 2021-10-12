@@ -30,7 +30,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libOmxApeDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxApeDec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libmdf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdf.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libdrmclearkeyplugin.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libapex_cmn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libapex_cmn.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/vendor.samsung.hardware.tlc.ucm@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.tlc.ucm@2.0-impl.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libgcs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs.so \
@@ -560,7 +559,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libcryptfshwhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcryptfshwhidl.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/librmp.so:$(TARGET_COPY_OUT_VENDOR)/lib/librmp.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libOmxAmrwbplusDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAmrwbplusDec.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/mediacas/libclearkeycasplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediacas/libclearkeycasplugin.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswregistrationalgo.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadiertac.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-color-convertor.so \
@@ -694,185 +692,58 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/firmware/wlan/qca_cld/bdwlan.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/bdwlan.bin \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/firmware/wlan/qca_cld/regdb.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/regdb.bin \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/firmware/dax_param.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dax_param.bin \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/wlan_vendor_rc:$(TARGET_COPY_OUT_VENDOR)/etc/wlan_vendor_rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/sec_config_oem:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config_oem \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/facerestoration/settings.json:$(TARGET_COPY_OUT_VENDOR)/etc/facerestoration/settings.json \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/mixer_usb_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_default.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/plmn_se13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13.bin \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/seccomp_policy/mediaextractor_sec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor_sec.policy \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/sound_trigger_mixer_paths_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_qrd.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_configs_stock.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_configs_stock.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/portrait_data/single_bokeh_feature.json:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/single_bokeh_feature.json \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/portrait_data/SRIB_HumanSegLite_INT8_V004.snf:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/SRIB_HumanSegLite_INT8_V004.snf \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/portrait_data/SRIB_HumanInsSeg_FP16_V007.snf:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/SRIB_HumanInsSeg_FP16_V007.snf \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/secnvm/k250a_00000200.img:$(TARGET_COPY_OUT_VENDOR)/etc/secnvm/k250a_00000200.img \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/hbtp/loader.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/loader.cfg \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/mixer_paths_wcd937x.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_wcd937x.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/fs_config_dirs:$(TARGET_COPY_OUT_VENDOR)/etc/fs_config_dirs \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/mixer_paths_wcd937xqrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_wcd937xqrd.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/nfc/sec_s3nrn4v_hwreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/sec_s3nrn4v_hwreg.bin \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/nfc/sec_s3nrn4v_swreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/sec_s3nrn4v_swreg.bin \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/singletake/bestmoment/facedetV2.polarr.db:$(TARGET_COPY_OUT_VENDOR)/etc/singletake/bestmoment/facedetV2.polarr.db \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/singletake/bestmoment/facedetV3.polarr.db:$(TARGET_COPY_OUT_VENDOR)/etc/singletake/bestmoment/facedetV3.polarr.db \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/singletake/bestmoment/scoreV2.polarr.db:$(TARGET_COPY_OUT_VENDOR)/etc/singletake/bestmoment/scoreV2.polarr.db \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hearing_aid_audio_policy_configuration.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/VslMesDetector/MesDetectorNoise.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/VslMesDetector/MesDetectorNoise.tflite \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/VslMesDetector/MesDetectorBlur.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/VslMesDetector/MesDetectorBlur.tflite \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/VslMesDetector/MesDetectorLowlight.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/VslMesDetector/MesDetectorLowlight.tflite \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/mixer_paths_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_qrd.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_effects_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_sec.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/IPACM_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/IPACM_cfg.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/plmn_delta_attaio.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_attaio.bin \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/group:$(TARGET_COPY_OUT_VENDOR)/etc/group \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/plmn_delta_hktw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_hktw.bin \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/saiv/ld/avg_hog_35pt.dat:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/ld/avg_hog_35pt.dat \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/saiv/ld/regress_matrix_short_35pt.dat:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/ld/regress_matrix_short_35pt.dat \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/saiv/ld/avg_hog_13pt.dat:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/ld/avg_hog_13pt.dat \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/saiv/ld/regress_matrix_short_13pt.dat:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/ld/regress_matrix_short_13pt.dat \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/saiv/ld/mean_35pt.txt:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/ld/mean_35pt.txt \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/saiv/gae/PmGenModel.bin:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/gae/PmGenModel.bin \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/saiv/gae/PmGenderFeatSelIdx.bin:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/gae/PmGenderFeatSelIdx.bin \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/saiv/gae/ParaFea.bin:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/gae/ParaFea.bin \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/saiv/gae/MeanFea.bin:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/gae/MeanFea.bin \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/saiv/gae/PmAgeFeatSelIdx.bin:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/gae/PmAgeFeatSelIdx.bin \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/saiv/gae/PmExpModel.bin:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/gae/PmExpModel.bin \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/saiv/gae/PmExpFeatSelIdx.bin:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/gae/PmExpFeatSelIdx.bin \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/saiv/gae/PmAgeModel.bin:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/gae/PmAgeModel.bin \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/saiv/image_understanding/db/aic_classifier/aic_classifier_cnn.info:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/image_understanding/db/aic_classifier/aic_classifier_cnn.info \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/saiv/image_understanding/db/aic_classifier/aic_classifier_cnn.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/image_understanding/db/aic_classifier/aic_classifier_cnn.dlc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/saiv/image_understanding/db/aic_detector/aic_detector_cnn.info:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/image_understanding/db/aic_detector/aic_detector_cnn.info \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/saiv/image_understanding/db/aic_detector/aic_detector_cnn.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/image_understanding/db/aic_detector/aic_detector_cnn.dlc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/saiv/fd/fast_face_detect_model_full_angle_16_CHAR.dat:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/fd/fast_face_detect_model_full_angle_16_CHAR.dat \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/sec.android.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/sec.android.hardware.nfc@1.2-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/snap_utility.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/snap_utility.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider@4.0-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.clearkey.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/android.hardware.health@2.1-service-samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.health@2.1-service-samsung.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/android.hardware.atrace@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.atrace@1.0-service.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.qti.adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.qti.hardware.cryptfshw@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.cryptfshw@1.0-service-qti.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/icd_over_five_vendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/icd_over_five_vendor.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.tlc.payment@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.tlc.payment@1.0-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.miscpower@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.miscpower@2.0-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.vibrator-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.vibrator-default.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.authfw@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.authfw@1.0-service.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.tlc.kg@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.tlc.kg@1.0-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/android.hardware.dumpstate@1.1-service-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.dumpstate@1.1-service-lazy.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/init.vendor.onebinary.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.onebinary.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/android.hardware.audio.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.security.engmode@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.security.engmode@1.0-service.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@2.2-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.tlc.iccc@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.tlc.iccc@1.0-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vndservicemanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vndservicemanager.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprov@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.security.widevine.keyprov@1.0-service.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.biometrics.face@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.biometrics.face@2.0-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.security.drk@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.security.drk@2.0-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.tlc.tima@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.tlc.tima@1.1-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/hw/init.qti.ufs.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qti.ufs.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.tlc.ucm@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.tlc.ucm@2.0-service.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/init.vendor.rilchip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilchip.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/emservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/emservice.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.snap@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.snap@1.2-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/init.audio.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.audio.samsung.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.iop@2.0-service.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/android.hardware.cas@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.cas@1.2-service.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.tlc.atn@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.tlc.atn@1.0-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/power-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/power-default-sec.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/init_thermal-engine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/hyper-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hyper-default-sec.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/init.vendor.sysfw.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sysfw.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/mutualex.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mutualex.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/init.nfc.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.nfc.samsung.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-qti.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/pa_daemon_qsee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/pa_daemon_qsee.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.tlc.blockchain@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.tlc.blockchain@1.0-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/android.hardware.usb@1.1-service.wahoo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.1-service.wahoo.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/ipacm-diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm-diag.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/lights-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-default-sec.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.0-service-multihal.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/cass.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cass.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/boringssl_self_test.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/boringssl_self_test.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/ipacm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.hqm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.hqm@1.0-service.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.tlc.hdm@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.tlc.hdm@1.1-service.rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/init/vendor.samsung.hardware.sysinput@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.sysinput@1.1-service.rc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/hostapd/hostapd_default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd_default.conf \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/hostapd/hostapd.accept:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.accept \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/hostapd/hostapd.deny:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.deny \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/charger_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fstab.qti \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/public.libraries.txt.backup:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt.backup \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_effects_common.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_common.conf \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/midas/SRIBMidas_aiDEBLUR_FP16_V0132.caffemodel:$(TARGET_COPY_OUT_VENDOR)/etc/midas/SRIBMidas_aiDEBLUR_FP16_V0132.caffemodel \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/midas/SRIBMidas_aiDENOISE_FP16_V006.caffemodel:$(TARGET_COPY_OUT_VENDOR)/etc/midas/SRIBMidas_aiDENOISE_FP16_V006.caffemodel \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/qdcm_calib_data_ss_dsi_panel_S6E3FC3_AMS646YD04_FHD.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ss_dsi_panel_S6E3FC3_AMS646YD04_FHD.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/selinux/selinux_denial_metadata:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/selinux_denial_metadata \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/selinux/plat_sepolicy_vers.txt:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/plat_sepolicy_vers.txt \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/selinux/vendor_sepolicy.cil:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_sepolicy.cil \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/selinux/vndservice_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vndservice_contexts \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/selinux/vendor_sepolicy_version:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_sepolicy_version \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/selinux/vendor_property_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_property_contexts \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/selinux/vendor_mac_permissions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_mac_permissions.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/selinux/vendor_service_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_service_contexts \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/selinux/vendor_seapp_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_seapp_contexts \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/selinux/vendor_file_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_file_contexts \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/selinux/vendor_hwservice_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_hwservice_contexts \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/selinux/sk/authorize.xml:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/sk/authorize.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/selinux/plat_pub_versioned.cil:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/plat_pub_versioned.cil \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/libnfc-mtp-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/mixer_usb_gray.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_gray.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/situation_audio_policy_volumes_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/situation_audio_policy_volumes_sec.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
@@ -918,34 +789,18 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/sensors/config/sns_gyro_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_gyro_cal.json \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/sensors/config/sns_tilt_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_disabled.json \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/sensors/config/sns_ccd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd.json \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/fs_config_files:$(TARGET_COPY_OUT_VENDOR)/etc/fs_config_files \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/traceconfig.txt:$(TARGET_COPY_OUT_VENDOR)/etc/traceconfig.txt \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/libnfc-qrd-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100.conf \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/config_chipset.json:$(TARGET_COPY_OUT_VENDOR)/etc/config_chipset.json \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/carrier/version.json:$(TARGET_COPY_OUT_VENDOR)/etc/carrier/version.json \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/carrier/target_carrier_features:$(TARGET_COPY_OUT_VENDOR)/etc/carrier/target_carrier_features \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/mtu-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtu-conf.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/beauty/settings.dat:$(TARGET_COPY_OUT_VENDOR)/etc/beauty/settings.dat \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/mkshrc:$(TARGET_COPY_OUT_VENDOR)/etc/mkshrc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_configs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_configs.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/hqm_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hqm_device.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_platform_info_diff.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_diff.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/floating_feature.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/snap_gpu_kernel_64.bin:$(TARGET_COPY_OUT_VENDOR)/etc/snap_gpu_kernel_64.bin \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_policy_configuration_base.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_base.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/passwd:$(TARGET_COPY_OUT_VENDOR)/etc/passwd \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/sensorhub_services.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensorhub_services.json \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/sound_trigger_mixer_paths_wcd937x.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_wcd937x.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/config_vendor.json:$(TARGET_COPY_OUT_VENDOR)/etc/config_vendor.json \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audconf/ODM/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ODM/Global_cal.acdb \
@@ -964,79 +819,20 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audconf/OPEN/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Speaker_cal.acdb \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audconf/OPEN/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Hdmi_cal.acdb \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audconf/OPEN/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Handset_cal.acdb \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_platform_info_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_qrd.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/wlan_common_rc:$(TARGET_COPY_OUT_VENDOR)/etc/wlan_common_rc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/plmn_delta_usagsm.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_usagsm.bin \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.vulkan.compute-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute-0.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.uicc.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepcounter.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level-1.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.light.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.audio.pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.pro.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.software.vulkan.deqp.level.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version-1_1.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.wifi.aware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.aware.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.gyroscope.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/permissions/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.compass.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100_38_4MHZ.conf \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/pdpcnt-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pdpcnt-conf.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/ev_lux_map_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ev_lux_map_config.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100_38_4MHZ.conf \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/mercury.json:$(TARGET_COPY_OUT_VENDOR)/etc/mercury.json \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/playback_record_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/playback_record_audio_policy_configuration.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/locale/plmn_delta_zh-rTW.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rTW.bin \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/locale/plmn_delta_zh-rHK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rHK.bin \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/locale/plmn_delta_zh-rCN.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rCN.bin \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/locale/plmn_delta_eng.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_eng.bin \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/lm/AppClassifierFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AppClassifierFeature.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/lm/GameOptimizationFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/GameOptimizationFeature.xml \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/str/str_preference_data.dat:$(TARGET_COPY_OUT_VENDOR)/etc/str/str_preference_data.dat \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/wifi/icm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/icm.conf \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.qti.hardware.btconfigstore@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.btconfigstore@2.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera2ndk_vendor.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.biometrics.fingerprint@3.0.so \
@@ -1064,7 +860,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqrtr.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libOmxApeDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxApeDec.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libmdf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdf.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libdrmclearkeyplugin.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.tlc.tima@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.tlc.tima@1.0.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/vendor.samsung.hardware.tlc.ucm@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.tlc.ucm@2.0-impl.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libgcs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs.so \
@@ -1609,7 +1404,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcryptfshwhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcryptfshwhidl.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/librmp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librmp.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libOmxAmrwbplusDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAmrwbplusDec.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/mediacas/libclearkeycasplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediacas/libclearkeycasplugin.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadiertac.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-color-convertor.so \
@@ -1721,18 +1515,7 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs-calwrapper.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svacnn.so \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/lib64/libperfioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfioctl.so \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/saiv/aisolution_1.0/SRIB_aiHDR_Local_V430_1024.caffemodel:$(TARGET_COPY_OUT_VENDOR)/saiv/aisolution_1.0/SRIB_aiHDR_Local_V430_1024.caffemodel \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/saiv/aisolution_1.0/SWISPNet_v-timestamp:$(TARGET_COPY_OUT_VENDOR)/saiv/aisolution_1.0/SWISPNet_v-timestamp \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/saiv/aisolution_1.0/SRIB_aiHDR_Global_V430_1024.caffemodel:$(TARGET_COPY_OUT_VENDOR)/saiv/aisolution_1.0/SRIB_aiHDR_Global_V430_1024.caffemodel \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/saiv/aisolution_1.0/model_20210204_1792_1920_w_h.pb:$(TARGET_COPY_OUT_VENDOR)/saiv/aisolution_1.0/model_20210204_1792_1920_w_h.pb \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/saiv/image_understanding/db/srr_interaction/srr_interaction_cnn.tf:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/srr_interaction/srr_interaction_cnn.tf \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/saiv/image_understanding/db/aig_classifier/aig_classifier_cnn.tf:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/aig_classifier/aig_classifier_cnn.tf \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/saiv/image_understanding/db/slens_detector/slens_detector_cnn.dlc:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/slens_detector/slens_detector_cnn.dlc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/saiv/image_understanding/db/smartscan_verifier/document_verifier_cnn.tflite:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/smartscan_verifier/document_verifier_cnn.tflite \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/saiv/image_understanding/db/aig_detector/aig_detector_cnn.tflite:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/aig_detector/aig_detector_cnn.tflite \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/saiv/image_understanding/db/slens_classifier/slens_classifier_cnn.dlc:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/slens_classifier/slens_classifier_cnn.dlc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/StoreKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/StoreKeybox \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/init.qcom.coex.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.coex.sh \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/ssr_diag:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_diag \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/ppd:$(TARGET_COPY_OUT_VENDOR)/bin/ppd \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
@@ -1757,15 +1540,12 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/spectraltool:$(TARGET_COPY_OUT_VENDOR)/bin/spectraltool \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/ssgtzd:$(TARGET_COPY_OUT_VENDOR)/bin/ssgtzd \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/wpa_cli:$(TARGET_COPY_OUT_VENDOR)/bin/wpa_cli \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/cnss_diag:$(TARGET_COPY_OUT_VENDOR)/bin/cnss_diag \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/fsdbg_vendor:$(TARGET_COPY_OUT_VENDOR)/bin/fsdbg_vendor \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/qrtr-lookup:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-lookup \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/init.qti.qcv.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.qcv.sh \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/qca6234-service.sh:$(TARGET_COPY_OUT_VENDOR)/bin/qca6234-service.sh \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/diag_dci_sample:$(TARGET_COPY_OUT_VENDOR)/bin/diag_dci_sample \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/dumpsys:$(TARGET_COPY_OUT_VENDOR)/bin/dumpsys \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/secure_ui_sample_client:$(TARGET_COPY_OUT_VENDOR)/bin/secure_ui_sample_client \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/checkpoint_gc:$(TARGET_COPY_OUT_VENDOR)/bin/checkpoint_gc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/PktRspTest:$(TARGET_COPY_OUT_VENDOR)/bin/PktRspTest \
@@ -1773,46 +1553,16 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/diag_callback_sample:$(TARGET_COPY_OUT_VENDOR)/bin/diag_callback_sample \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/test_model.json:$(TARGET_COPY_OUT_VENDOR)/bin/test_model.json \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/sigma_dut:$(TARGET_COPY_OUT_VENDOR)/bin/sigma_dut \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/android.hardware.atrace@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.atrace@1.0-service \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.thermal@1.0-service \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-qti \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/wpa_supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/hw/wpa_supplicant \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/vendor.samsung.hardware.hqm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.hqm@1.0-service \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/android.hardware.power.samsung-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.power.samsung-service \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/vendor.samsung.hardware.hyper-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.hyper-service \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/vendor.samsung.hardware.light-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.light-service \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.wifi@2.0-service \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/vendor.qti.hardware.cryptfshw@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.cryptfshw@1.0-service-qti \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/vendor.samsung.hardware.sysinput@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.sysinput@1.1-service \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/hostapd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/hostapd \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/capabilityconfigstoretest:$(TARGET_COPY_OUT_VENDOR)/bin/hw/capabilityconfigstoretest \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/android.hardware.sensors@2.0-service.multihal:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@2.0-service.multihal \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qseecom@1.0-service \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/rild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/rild \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/sec.android.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/sec.android.hardware.nfc@1.2-service \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/android.hardware.usb@1.1-service.wahoo:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb@1.1-service.wahoo \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/android.hardware.gnss@2.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss@2.1-service-qti \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/vendor.samsung.hardware.vibrator-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.vibrator-service \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@2.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@2.2-service \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/android.hardware.wifi@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi@1.0-service \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/android.hardware.health@2.1-service-samsung:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.health@2.1-service-samsung \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/mfgloader:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mfgloader \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/android.hardware.cas@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.cas@1.2-service \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/android.hardware.audio.service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio.service \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/macloader:$(TARGET_COPY_OUT_VENDOR)/bin/hw/macloader \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/vendor.samsung.hardware.snap@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.snap@1.2-service \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/android.hardware.dumpstate@1.1-service-lazy:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.dumpstate@1.1-service-lazy \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.clearkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.clearkey \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/vendor.qti.hardware.iop@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.iop@2.0-service \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hw/vendor.samsung.hardware.miscpower@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.miscpower@2.0-service \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/ks:$(TARGET_COPY_OUT_VENDOR)/bin/ks \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/mutualex:$(TARGET_COPY_OUT_VENDOR)/bin/mutualex \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
@@ -1821,7 +1571,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/nqnfcinfo:$(TARGET_COPY_OUT_VENDOR)/bin/nqnfcinfo \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/vendor_cmd_tool:$(TARGET_COPY_OUT_VENDOR)/bin/vendor_cmd_tool \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/secril_config_svc:$(TARGET_COPY_OUT_VENDOR)/bin/secril_config_svc \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/init.mdm.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mdm.sh \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/dspservice:$(TARGET_COPY_OUT_VENDOR)/bin/dspservice \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/cplay:$(TARGET_COPY_OUT_VENDOR)/bin/cplay \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/sscrpcd:$(TARGET_COPY_OUT_VENDOR)/bin/sscrpcd \
@@ -1830,8 +1579,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hostapd_cli:$(TARGET_COPY_OUT_VENDOR)/bin/hostapd_cli \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/iof_vendor:$(TARGET_COPY_OUT_VENDOR)/bin/iof_vendor \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/qmi-framework-tests/qmi_test_mt_client_init_instance:$(TARGET_COPY_OUT_VENDOR)/bin/qmi-framework-tests/qmi_test_mt_client_init_instance \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/ssr_setup:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_setup \
@@ -1839,20 +1586,15 @@ PRODUCT_COPY_FILES += \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/iod:$(TARGET_COPY_OUT_VENDOR)/bin/iod \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/qrtr-ns:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-ns \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/time_client:$(TARGET_COPY_OUT_VENDOR)/bin/time_client \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/init.qcom.efs.sync.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.efs.sync.sh \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/ipacm:$(TARGET_COPY_OUT_VENDOR)/bin/ipacm \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/wvkprov:$(TARGET_COPY_OUT_VENDOR)/bin/wvkprov \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/test_diag:$(TARGET_COPY_OUT_VENDOR)/bin/test_diag \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/init.qcom.sensors.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sensors.sh \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/wifilearner:$(TARGET_COPY_OUT_VENDOR)/bin/wifilearner \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hbtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/hbtp_daemon \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/storkd:$(TARGET_COPY_OUT_VENDOR)/bin/storkd \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/factory.ssc:$(TARGET_COPY_OUT_VENDOR)/bin/factory.ssc \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/diag_uart_log:$(TARGET_COPY_OUT_VENDOR)/bin/diag_uart_log \
-    $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/snap_utility_64:$(TARGET_COPY_OUT_VENDOR)/bin/snap_utility_64 \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/diag_socket_log:$(TARGET_COPY_OUT_VENDOR)/bin/diag_socket_log \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hal_proxy_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/hal_proxy_daemon \
     $(COMMON_VENDOR_PATH)/proprietary/vendor/bin/hdcp2p2prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp2p2prov
