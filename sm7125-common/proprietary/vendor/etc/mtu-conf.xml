@@ -26,7 +26,8 @@ mtuTableEntry attributes:
            SRIL_RAT_GEN_2G = 1,
            SRIL_RAT_GEN_3G = 2,
            SRIL_RAT_GEN_4G = 3,
-           SRIL_RAT_GEN_WIRELESS = 4
+           SRIL_RAT_GEN_WIRELESS = 4,
+           SRIL_RAT_GEN_5G = 5
 	proto:
 	       SRIL_PROTO_INVALID = -1,
               SRIL_PROTO_UNKNOWN = 0,
@@ -104,6 +105,9 @@ mtuTableEntry attributes:
     <mtuTableEntry numeric="21407" mtu="1440" profile="2"/>
     <mtuTableEntry numeric="21407" mtu="1440" profile="14"/>
     <mtuTableEntry numeric="21407" mtu="1280" rat="4"/>
+
+<!-- Elisa Estonia -->
+    <mtuTableEntry numeric="24802" mtu="1280" profile="2"/>
 
 <!-- Digi Mobil Hungary -->
     <mtuTableEntry numeric="21603" mtu="1400" profile="2"/>

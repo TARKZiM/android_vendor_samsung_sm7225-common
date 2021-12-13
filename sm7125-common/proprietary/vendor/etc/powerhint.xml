@@ -133,11 +133,12 @@
         <!--BWMON - Set sample_ms 20 -->
         <!--Change min freq to 768Mhz -->
         <!--LPM disable : MPCTLV3_ALL_CPUS_PWR_CLPS_DIS(0x40400000) : 0x01-->
+        <!--ddr min freq: MPCTLV3_LLCC_DDR_LAT_MIN_FREQ_0(0x43430000) : 0x6B8-->
         <Config
             Id="0x00001336" Enable="true" Timeout="0" Target="atoll"
             Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
             0x40C68130, 0xFFFFFFFA, 0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
-            0x4183C000, 0x14, 0x40800100, 0x300, 0x40400000, 0x01"/>
+            0x4183C000, 0x14, 0x40800100, 0x300, 0x40400000, 0x01, 0x43430000, 0x6B8"/>
 
         <!-- video encode UHD 60 fps : POWER_HINT_ID_VIDEO_ENCODE_UHD60 -->
         <!--L CPU CORE 0 SCHED LOAD BOOST -->
