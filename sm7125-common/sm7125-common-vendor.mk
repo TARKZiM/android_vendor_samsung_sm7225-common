@@ -167,7 +167,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7125-common/proprietary/vendor/firmware/a630_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a630_gmu.bin \
     vendor/samsung/sm7125-common/proprietary/vendor/firmware/a630_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a630_sqe.fw \
     vendor/samsung/sm7125-common/proprietary/vendor/firmware/a640_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a640_gmu.bin \
+    vendor/samsung/sm7125-common/proprietary/vendor/firmware/apbtfw11.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/apbtfw11.tlv \
     vendor/samsung/sm7125-common/proprietary/vendor/firmware/apnv11.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/apnv11.bin \
+    vendor/samsung/sm7125-common/proprietary/vendor/firmware/crbtfw21.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/crbtfw21.tlv \
     vendor/samsung/sm7125-common/proprietary/vendor/firmware/crnv21.b71:$(TARGET_COPY_OUT_VENDOR)/firmware/crnv21.b71 \
     vendor/samsung/sm7125-common/proprietary/vendor/firmware/crnv21.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/crnv21.bin \
     vendor/samsung/sm7125-common/proprietary/vendor/firmware/dax_param.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dax_param.bin \

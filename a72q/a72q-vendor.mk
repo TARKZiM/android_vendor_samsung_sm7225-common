@@ -17,8 +17,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a72q/proprietary/vendor/etc/qdcm_calib_data_ss_dsi_panel_S6E3FC3_AMS667YM01_FHD.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ss_dsi_panel_S6E3FC3_AMS667YM01_FHD.xml \
     vendor/samsung/a72q/proprietary/vendor/etc/sensors/config/atoll_qrd_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/atoll_qrd_ak991x_0.json \
     vendor/samsung/a72q/proprietary/vendor/etc/sensors/config/sns_hw_revision.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_hw_revision.json \
-    vendor/samsung/a72q/proprietary/vendor/firmware/apbtfw11.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/apbtfw11.tlv \
-    vendor/samsung/a72q/proprietary/vendor/firmware/crbtfw21.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/crbtfw21.tlv \
     vendor/samsung/a72q/proprietary/vendor/lib/camera/com.qti.eeprom.sec2qcconversion.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.eeprom.sec2qcconversion.so \
     vendor/samsung/a72q/proprietary/vendor/lib/camera/com.samsung.sensor.hi847.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensor.hi847.so \
     vendor/samsung/a72q/proprietary/vendor/lib/camera/com.samsung.sensormodule.0_0_sony_imx682.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.0_0_sony_imx682.bin \
