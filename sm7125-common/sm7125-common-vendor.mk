@@ -120,7 +120,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7125-common/proprietary/vendor/etc/sensors/config/atoll_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/atoll_default_sensors.json \
     vendor/samsung/sm7125-common/proprietary/vendor/etc/sensors/config/atoll_dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/atoll_dynamic_sensors.json \
     vendor/samsung/sm7125-common/proprietary/vendor/etc/sensors/config/atoll_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/atoll_lsm6dso_0.json \
-    vendor/samsung/sm7125-common/proprietary/vendor/etc/sensors/config/atoll_qrd_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/atoll_qrd_lsm6dso_0.json \
     vendor/samsung/sm7125-common/proprietary/vendor/etc/sensors/config/atoll_qrd_stk31610_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/atoll_qrd_stk31610_0.json \
     vendor/samsung/sm7125-common/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
     vendor/samsung/sm7125-common/proprietary/vendor/etc/sensors/config/sns_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_disabled.json \

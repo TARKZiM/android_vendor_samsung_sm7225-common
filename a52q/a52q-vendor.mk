@@ -26,6 +26,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52q/proprietary/vendor/etc/sensors/config/atoll_qrd_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/atoll_qrd_ak991x_0.json \
     vendor/samsung/a52q/proprietary/vendor/etc/sensors/config/atoll_qrd_ak991x_2.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/atoll_qrd_ak991x_2.json \
     vendor/samsung/a52q/proprietary/vendor/etc/sensors/config/atoll_qrd_ak991x_6.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/atoll_qrd_ak991x_6.json \
+    vendor/samsung/a52q/proprietary/vendor/etc/sensors/config/atoll_qrd_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/atoll_qrd_lsm6dso_0.json \
     vendor/samsung/a52q/proprietary/vendor/lib/camera/com.qti.eeprom.sec2qcconversion.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.eeprom.sec2qcconversion.so \
     vendor/samsung/a52q/proprietary/vendor/lib/camera/com.samsung.sensor.gc5035.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensor.gc5035.so \
     vendor/samsung/a52q/proprietary/vendor/lib/camera/com.samsung.sensormodule.0_0_sony_imx682.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.0_0_sony_imx682.bin \
