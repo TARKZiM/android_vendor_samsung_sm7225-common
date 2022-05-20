@@ -1051,7 +1051,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7125-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio@2.2.so
 
 PRODUCT_PACKAGES += \
-    libril \
     libskeymaster4device \
     CACertService \
     TimeService \
