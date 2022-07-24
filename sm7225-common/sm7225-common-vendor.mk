@@ -35,7 +35,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7225-common/proprietary/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qseecom@1.0-service \
     vendor/samsung/sm7225-common/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor/samsung/sm7225-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service_64 \
-    vendor/samsung/sm7225-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service_64 \
+    vendor/samsung/sm7225-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.snap@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.snap@1.2-service \
     vendor/samsung/sm7225-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.light-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.light-service \
     vendor/samsung/sm7225-common/proprietary/vendor/bin/ipacm-diag:$(TARGET_COPY_OUT_VENDOR)/bin/ipacm-diag \
     vendor/samsung/sm7225-common/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
@@ -97,7 +97,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider@4.0-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider@4.0-service_64.rc \
-    vendor/samsung/sm7225-common/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider@4.0-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider@4.0-service_64.rc \
+    vendor/samsung/sm7225-common/proprietary/vendor/etc/init/vendor.samsung.hardware.snap@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.snap@1.2-service.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/locale/plmn_delta_eng.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_eng.bin \
@@ -214,6 +214,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/hw/audio.primary.lito.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.lito.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.qcom.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/hw/camera.unihal.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.unihal.default.so \
+    vendor/samsung/sm7225-common/proprietary/vendor/lib/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qti.chi.override.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so \
@@ -223,6 +224,21 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/hw/vendor.samsung.hardware.camera.provider@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.samsung.hardware.camera.provider@4.0-impl.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.adreno.so \
+    vendor/samsung/sm7225-common/proprietary/vendor/lib/com.qti.feature2.anchorsync.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.anchorsync.so \
+    vendor/samsung/sm7225-common/proprietary/vendor/lib/com.qti.feature2.demux.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.demux.so \
+    vendor/samsung/sm7225-common/proprietary/vendor/lib/com.qti.feature2.frameselect.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.frameselect.so \
+    vendor/samsung/sm7225-common/proprietary/vendor/lib/com.qti.feature2.fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.fusion.so \
+    vendor/samsung/sm7225-common/proprietary/vendor/lib/com.qti.feature2.generic.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.generic.so \
+    vendor/samsung/sm7225-common/proprietary/vendor/lib/com.qti.feature2.gs.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.gs.so \
+    vendor/samsung/sm7225-common/proprietary/vendor/lib/com.qti.feature2.hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.hdr.so \
+    vendor/samsung/sm7225-common/proprietary/vendor/lib/com.qti.feature2.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.memcpy.so \
+    vendor/samsung/sm7225-common/proprietary/vendor/lib/com.qti.feature2.mfsr.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.mfsr.so \
+    vendor/samsung/sm7225-common/proprietary/vendor/lib/com.qti.feature2.qcfa.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.qcfa.so \
+    vendor/samsung/sm7225-common/proprietary/vendor/lib/com.qti.feature2.rawhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.rawhdr.so \
+    vendor/samsung/sm7225-common/proprietary/vendor/lib/com.qti.feature2.rt.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.rt.so \
+    vendor/samsung/sm7225-common/proprietary/vendor/lib/com.qti.feature2.serializer.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.serializer.so \
+    vendor/samsung/sm7225-common/proprietary/vendor/lib/com.qti.feature2.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.stub.so \
+    vendor/samsung/sm7225-common/proprietary/vendor/lib/com.qti.feature2.swmf.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.swmf.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlacSwDec.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libApeSwDec.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/libBeauty_v4.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libBeauty_v4.camera.samsung.so \
@@ -738,6 +754,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7225-common/proprietary/vendor/lib64/libimage_enhancement.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimage_enhancement.arcsoft.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib64/libimagecodec_native.quram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimagecodec_native.quram.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib64/libipanat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipanat.so \
+    vendor/samsung/sm7225-common/proprietary/vendor/lib64/libipebpsstriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipebpsstriping.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib64/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnihelper.so \
