@@ -1019,6 +1019,7 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     libskeymaster4device \
     CACertService \
+    QCC-TR-UI \
     TimeService \
     android.hardware.gnss@2.1-service-qti \
     android.hardware.health@2.1-samsung \
