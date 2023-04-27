@@ -85,7 +85,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/init_thermal-engine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine.rc \
-    vendor/samsung/sm7225-common/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/ipacm-diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm-diag.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/lights-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-default-sec.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
@@ -201,6 +200,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7225-common/proprietary/vendor/firmware/lagoon_ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/lagoon_ipa_fws.b04 \
     vendor/samsung/sm7225-common/proprietary/vendor/firmware/lagoon_ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/lagoon_ipa_fws.elf \
     vendor/samsung/sm7225-common/proprietary/vendor/firmware/lagoon_ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/lagoon_ipa_fws.mdt \
+    vendor/samsung/sm7225-common/proprietary/vendor/firmware/ipa/a4260/ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a4260/ipa_fws.b01 \
+    vendor/samsung/sm7225-common/proprietary/vendor/firmware/ipa/a4260/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a4260/ipa_fws.elf \
+    vendor/samsung/sm7225-common/proprietary/vendor/firmware/ipa/a4260/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a4260/ipa_fws.mdt \
+    vendor/samsung/sm7225-common/proprietary/vendor/firmware/ipa/a4260/lagoon_ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a4260/lagoon_ipa_fws.b01 \
+    vendor/samsung/sm7225-common/proprietary/vendor/firmware/ipa/a4260/lagoon_ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a4260/lagoon_ipa_fws.elf \
+    vendor/samsung/sm7225-common/proprietary/vendor/firmware/ipa/a4260/lagoon_ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a4260/lagoon_ipa_fws.mdt \
     vendor/samsung/sm7225-common/proprietary/vendor/firmware/nfc/sec_s3nrn4v_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/sec_s3nrn4v_firmware.bin \
     vendor/samsung/sm7225-common/proprietary/vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini \
     vendor/samsung/sm7225-common/proprietary/vendor/firmware/wlan/qca_cld/bdwlan.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/bdwlan.bin \
