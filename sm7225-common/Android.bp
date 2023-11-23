@@ -150,6 +150,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+        name: "manifest_hyper-default-sec",
+        owner: "samsung",
+        src: "proprietary/vendor/etc/vintf/manifest/hyper-default-sec.xml",
+        filename_from_src: true,
+        sub_dir: "vintf/manifest",
+        soc_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "manifest_vendor.qti.hardware.display.composer-service",
 	owner: "samsung",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml",
