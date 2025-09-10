@@ -15,18 +15,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a42xq/proprietary/vendor/etc/audconf/OPEN/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Speaker_cal.acdb \
     vendor/samsung/a42xq/proprietary/vendor/etc/audconf/OPEN/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/workspaceFile.qwsp \
     vendor/samsung/a42xq/proprietary/vendor/etc/qdcm_calib_data_ss_dsi_panel_S6E8FC1_AMS660XR01_HD.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ss_dsi_panel_S6E8FC1_AMS660XR01_HD.xml \
-    vendor/samsung/a42xq/proprietary/vendor/lib/camera/com.samsung.sensormodule.0_lsi_s5kgm2.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.0_lsi_s5kgm2.bin \
-    vendor/samsung/a42xq/proprietary/vendor/lib/camera/com.samsung.sensormodule.13_hynix_hi2021q_full.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.13_hynix_hi2021q_full.bin \
-    vendor/samsung/a42xq/proprietary/vendor/lib/camera/com.samsung.sensormodule.1_hynix_hi2021q.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.1_hynix_hi2021q.bin \
-    vendor/samsung/a42xq/proprietary/vendor/lib/camera/com.samsung.sensormodule.2_lsi_s5k4ha.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.2_lsi_s5k4ha.bin \
-    vendor/samsung/a42xq/proprietary/vendor/lib/camera/com.samsung.sensormodule.3_lsi_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.3_lsi_gc5035.bin \
-    vendor/samsung/a42xq/proprietary/vendor/lib/camera/com.samsung.sensormodule.4_lsi_gc5035_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.4_lsi_gc5035_macro.bin \
-    vendor/samsung/a42xq/proprietary/vendor/lib/camera/com.samsung.tuned.hynix_hi2021q.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.hynix_hi2021q.bin \
-    vendor/samsung/a42xq/proprietary/vendor/lib/camera/com.samsung.tuned.lsi_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.lsi_gc5035.bin \
-    vendor/samsung/a42xq/proprietary/vendor/lib/camera/com.samsung.tuned.lsi_gc5035_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.lsi_gc5035_macro.bin \
-    vendor/samsung/a42xq/proprietary/vendor/lib/camera/com.samsung.tuned.lsi_s5k4ha.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.lsi_s5k4ha.bin \
-    vendor/samsung/a42xq/proprietary/vendor/lib/camera/com.samsung.tuned.lsi_s5kgm2.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.lsi_s5kgm2.bin \
-    vendor/samsung/a42xq/proprietary/vendor/lib/camera/ois_mcu_stm32g_fw.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/ois_mcu_stm32g_fw.bin \
     vendor/samsung/a42xq/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_lsi_s5kgm2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_lsi_s5kgm2.bin \
     vendor/samsung/a42xq/proprietary/vendor/lib64/camera/com.samsung.sensormodule.13_hynix_hi2021q_full.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.13_hynix_hi2021q_full.bin \
     vendor/samsung/a42xq/proprietary/vendor/lib64/camera/com.samsung.sensormodule.1_hynix_hi2021q.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.1_hynix_hi2021q.bin \
