@@ -19,7 +19,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-qti.rc \
-    vendor/samsung/sm7225-common/proprietary/vendor/etc/init/android.hardware.health@2.1-service-samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.health@2.1-service-samsung.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/camera.unihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camera.unihal.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
@@ -146,9 +145,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.samsung.hardware.bluetooth.a2dp@1.0-impl \
-    libAlacSwDec \
-    libApeSwDec \
-    libFlacSwDec \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
@@ -220,7 +216,6 @@ PRODUCT_PACKAGES += \
     libsecureui \
     libsecureui_svcsock \
     libssd \
-    libstagefright_soft_qtiflacdec \
     libswregistrationalgo \
     libsysmon_cdsp_skel \
     libsystem_health_mon \
@@ -287,7 +282,6 @@ PRODUCT_PACKAGES += \
     libq3dtools_adreno \
     libq3dtools_esx \
     android.hardware.gnss@2.1-impl-qti \
-    android.hardware.health@2.0-impl-2.1-samsung \
     camera.qcom \
     camera.unihal.default \
     com.qti.chi.override \
@@ -297,6 +291,8 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.gnss@2.0-impl-sec \
     vendor.samsung.hardware.snap@1.2-impl \
     vulkan.adreno \
+    libAlacSwDec \
+    libApeSwDec \
     libBeauty_v4.camera.samsung \
     libC2D2 \
     libCB \
@@ -304,24 +300,13 @@ PRODUCT_PACKAGES += \
     libDualCamBokehCapture.camera.samsung \
     libFacePreProcessing.camera.samsung \
     libFace_Landmark_API.camera.samsung \
+    libFlacSwDec \
     libHandGesture.camera.samsung \
     libHprFace_GAE_api.camera.samsung \
     libHpr_RecGAE_cvFeature_v1.0.camera.samsung \
     libLocalTM_capture_core.camera.samsung \
     libLocalTM_wrapper.camera.samsung \
-    libMpeg4SwEncoder \
-    libOmxAacDec \
-    libOmxAlacDec \
-    libOmxAlacDecSw \
-    libOmxAmrwbplusDec \
-    libOmxApeDec \
-    libOmxApeDecSw \
     libOmxBlackBar \
-    libOmxEvrcDec \
-    libOmxQcelp13Dec \
-    libOmxSwVdec \
-    libOmxSwVencMpeg4 \
-    libOmxWmaDec \
     libOpenCv.camera.samsung \
     libSNPE \
     libadreno_utils \
@@ -494,7 +479,6 @@ PRODUCT_PACKAGES += \
     libstork_shared \
     libsuper_night_interface \
     libswldc_capture_core.camera.samsung \
-    libswvdec \
     libsynergy_loc_api \
     libtinyxml2_1 \
     libtriplecam_image_optical_zoom \
@@ -537,7 +521,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.camera.provider@4.0-legacy \
     vendor.samsung.hardware.camera.provider@4.0 \
     vendor.samsung.hardware.gnss@2.0 \
-    vendor.samsung.hardware.health@2.0 \
     vendor.samsung.hardware.hyper-V2-ndk_platform \
     vendor.samsung.hardware.light-V1-ndk_platform \
     vendor.samsung.hardware.radio.bridge@2.0 \
@@ -567,7 +550,6 @@ PRODUCT_PACKAGES += \
     CACertService \
     TimeService \
     android.hardware.gnss@2.1-service-qti.xml \
-    android.hardware.health@2.1-samsung.xml \
     android.hardware.neuralnetworks@1.3-service-qti-hta.xml \
     android.hardware.neuralnetworks@1.3-service-qti.xml \
     lights-default-sec.xml \
@@ -582,13 +564,11 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-service-qti \
     android.hardware.drm@1.3-service.widevine \
     android.hardware.gnss@2.1-service-qti \
-    android.hardware.health@2.1-service-samsung \
     android.hardware.neuralnetworks@1.3-service-qti \
     macloader \
     rild \
     vendor.display.color@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
-    vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.iop@2.0-service \
     vendor.qti.hardware.perf@2.2-service \
     vendor.qti.hardware.qseecom@1.0-service \
