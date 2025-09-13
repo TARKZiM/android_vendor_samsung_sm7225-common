@@ -34,6 +34,14 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a42xq/proprietary/vendor/lib64/camera/w_tof_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/w_tof_calibration.bin
 
 PRODUCT_PACKAGES += \
+    libIMUSensor \
+    libbauthserver \
+    libbauthtzcommon \
+    libegis_fp_normal_sensor_test \
+    libgf_in_system_lib \
+    libqfp_sensortest \
+    libsec2qc_conversion \
+    libsynaFpSensorTestNwd \
     com.samsung.sensor.gc5035 \
     com.samsung.sensor.gc5035_macro \
     com.samsung.sensor.hi2021q \
@@ -54,11 +62,18 @@ PRODUCT_PACKAGES += \
     com.qti.node.memcpy \
     com.qti.node.stich \
     com.qti.node.swregistration \
+    com.qti.stats.aec \
+    com.qti.stats.af \
     com.qti.stats.afd \
     com.qti.stats.asd \
+    com.qti.stats.awb \
+    com.qti.stats.haf \
     com.qti.stats.hafoverride \
+    com.qti.stats.localhistogram \
+    com.qti.stats.pdlib \
     com.qti.stats.pdlibsony \
     com.qti.stats.pdlibwrapper \
+    com.qti.stats.statsgenerator \
     com.qti.stats.tracker \
     com.samsung.node.capture_bokeh \
     com.samsung.node.capture_fusion \
@@ -74,21 +89,5 @@ PRODUCT_PACKAGES += \
     com.ss.stats.af \
     com.ss.stats.awb \
     com.ss.stats.pdlib \
-    libIMUSensor \
-    libbauthserver \
-    libbauthtzcommon \
-    libegis_fp_normal_sensor_test \
-    libgf_in_system_lib \
-    libqfp_sensortest \
-    libsec2qc_conversion \
-    libsynaFpSensorTestNwd \
-    libvdis_interface \
-    libdepthmapwrapper \
-    com.qti.stats.aec \
-    com.qti.stats.af \
-    com.qti.stats.awb \
-    com.qti.stats.haf \
-    com.qti.stats.localhistogram \
-    com.qti.stats.pdlib \
-    com.qti.stats.statsgenerator \
-    libMOTION
+    libMOTION \
+    libvdis_interface
