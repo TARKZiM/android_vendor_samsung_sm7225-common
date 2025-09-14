@@ -56,6 +56,138 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "eglSubDriverAndroid",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/egl/eglSubDriverAndroid.so"],
+			shared_libs: ["libEGL_adreno", "libcutils", "libhardware", "libgsl", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "android.hardware.graphics.mapper@3.0", "vendor.qti.hardware.display.mapperextensions@1.1", "vendor.qti.hardware.display.mapper@4.0", "android.hardware.graphics.mapper@4.0", "android.hardware.graphics.mapper@2.0", "libhidlbase", "libutils", "libdl", "libz", "liblog", "libc++", "libc", "libm", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/egl/eglSubDriverAndroid.so"],
+			shared_libs: ["libEGL_adreno", "libcutils", "libhardware", "libgsl", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "android.hardware.graphics.mapper@3.0", "vendor.qti.hardware.display.mapperextensions@1.1", "vendor.qti.hardware.display.mapper@4.0", "android.hardware.graphics.mapper@4.0", "android.hardware.graphics.mapper@2.0", "libhidlbase", "libutils", "libdl", "libz", "liblog", "libc++", "libc", "libm", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "egl",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libEGL_adreno",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/egl/libEGL_adreno.so"],
+			shared_libs: ["libadreno_utils", "libgsl", "libcutils", "libdl", "libz", "liblog", "libc++", "libc", "libm", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/egl/libEGL_adreno.so"],
+			shared_libs: ["libadreno_utils", "libgsl", "libcutils", "libdl", "libz", "liblog", "libc++", "libc", "libm", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "egl",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libGLESv1_CM_adreno",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so"],
+			shared_libs: ["libgsl", "libcutils", "libdl", "libz", "liblog", "libc++", "libc", "libm", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so"],
+			shared_libs: ["libgsl", "libcutils", "libdl", "libz", "liblog", "libc++", "libc", "libm", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "egl",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libGLESv2_adreno",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/egl/libGLESv2_adreno.so"],
+			shared_libs: ["libadreno_utils", "libgsl", "libllvm-glnext", "libcutils", "libdl", "libz", "liblog", "libc++", "libc", "libm", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/egl/libGLESv2_adreno.so"],
+			shared_libs: ["libadreno_utils", "libgsl", "libllvm-glnext", "libcutils", "libdl", "libz", "liblog", "libc++", "libc", "libm", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "egl",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libq3dtools_adreno",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/egl/libq3dtools_adreno.so"],
+			shared_libs: ["libcutils", "liblog", "libgsl", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/egl/libq3dtools_adreno.so"],
+			shared_libs: ["libcutils", "liblog", "libgsl", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "egl",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libq3dtools_esx",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/egl/libq3dtools_esx.so"],
+			shared_libs: ["libcutils", "liblog", "libz", "libdl", "libc++", "libc", "libm", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/egl/libq3dtools_esx.so"],
+			shared_libs: ["libcutils", "liblog", "libz", "libdl", "libc++", "libc", "libm", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "egl",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "android.hardware.bluetooth@1.0-impl-qti",
 	owner: "samsung",
 	strip: {
@@ -249,6 +381,70 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "both",
 	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vulkan.adreno",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/hw/vulkan.adreno.so"],
+			shared_libs: ["libadreno_utils", "libgsl", "libz", "liblog", "libllvm-glnext", "libcutils", "libhardware", "libnativewindow", "vendor.qti.hardware.display.mapper@2.0", "android.hardware.graphics.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "android.hardware.graphics.mapper@3.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libhidlbase", "libutils", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/vulkan.adreno.so"],
+			shared_libs: ["libadreno_utils", "libgsl", "libz", "liblog", "libllvm-glnext", "libcutils", "libhardware", "libnativewindow", "vendor.qti.hardware.display.mapper@2.0", "android.hardware.graphics.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "android.hardware.graphics.mapper@3.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libhidlbase", "libutils", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libC2D2",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libC2D2.so"],
+			shared_libs: ["libgsl", "libcutils", "libutils", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libC2D2.so"],
+			shared_libs: ["libgsl", "libcutils", "libutils", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCB",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCB.so"],
+			shared_libs: ["libcutils", "liblog", "libgsl", "libutils", "libnativewindow", "libvndksupport", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.mapper@4.0", "android.hardware.graphics.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libhidlbase", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCB.so"],
+			shared_libs: ["libcutils", "liblog", "libgsl", "libutils", "libnativewindow", "libvndksupport", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.mapper@4.0", "android.hardware.graphics.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libhidlbase", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
 	prefer: true,
 	soc_specific: true,
 }
@@ -527,6 +723,48 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libadreno_app_profiles",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libadreno_app_profiles.so"],
+			shared_libs: ["libcutils", "libhardware", "libutils", "libhidlbase", "libhidlmemory", "android.hidl.memory@1.0", "vendor.qti.qspmhal@1.0", "libdl", "libz", "liblog", "libc++", "libc", "libm", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libadreno_app_profiles.so"],
+			shared_libs: ["libcutils", "libhardware", "libutils", "libhidlbase", "libhidlmemory", "android.hidl.memory@1.0", "vendor.qti.qspmhal@1.0", "libdl", "libz", "liblog", "libc++", "libc", "libm", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libadreno_utils",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libadreno_utils.so"],
+			shared_libs: ["libgsl", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libadreno_utils.so"],
+			shared_libs: ["libgsl", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libadsp_default_listener",
 	owner: "samsung",
 	strip: {
@@ -710,6 +948,27 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libc++_shared.so"],
 			shared_libs: ["libc", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libc2d30_bltlib",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libc2d30_bltlib.so"],
+			shared_libs: ["libgsl", "libcutils", "libutils", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libc2d30_bltlib.so"],
+			shared_libs: ["libgsl", "libcutils", "libutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
@@ -1033,6 +1292,27 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libgsl",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libgsl.so"],
+			shared_libs: ["libcutils", "liblog", "libz", "libsync", "libion", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libgsl.so"],
+			shared_libs: ["libcutils", "liblog", "libz", "libsync", "libion", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libimagecodec_native.quram",
 	owner: "samsung",
 	strip: {
@@ -1046,6 +1326,27 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libimagecodec_native.quram.so"],
 			shared_libs: ["libm", "liblog", "libz", "libc", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libllvm-glnext",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libllvm-glnext.so"],
+			shared_libs: ["libgsl", "liblog", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libllvm-glnext.so"],
+			shared_libs: ["libgsl", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
@@ -1412,27 +1713,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libqseed3",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libqseed3.so"],
-			shared_libs: ["libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqseed3.so"],
-			shared_libs: ["libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libqti-iopd-client",
 	owner: "samsung",
 	strip: {
@@ -1572,27 +1852,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libsavscmn.so"],
 			shared_libs: ["libm", "libz", "liblog", "libc++", "libc", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libsdm-colormgr-algo",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libsdm-colormgr-algo.so"],
-			shared_libs: ["liblog", "libdisplaydebug", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsdm-colormgr-algo.so"],
-			shared_libs: ["liblog", "libdisplaydebug", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
@@ -2343,6 +2602,27 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "vendor.qti.qspmhal@1.0",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vendor.qti.qspmhal@1.0.so"],
+			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.qti.qspmhal@1.0.so"],
+			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "vendor.samsung.hardware.bluetooth.a2dp@1.0",
 	owner: "samsung",
 	strip: {
@@ -2880,114 +3160,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "eglSubDriverAndroid",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/egl/eglSubDriverAndroid.so"],
-			shared_libs: ["libEGL_adreno", "libcutils", "libhardware", "libgsl", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "android.hardware.graphics.mapper@3.0", "vendor.qti.hardware.display.mapperextensions@1.1", "vendor.qti.hardware.display.mapper@4.0", "android.hardware.graphics.mapper@4.0", "android.hardware.graphics.mapper@2.0", "libhidlbase", "libutils", "libdl", "libz", "liblog", "libc++", "libc", "libm", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "egl",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libEGL_adreno",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/egl/libEGL_adreno.so"],
-			shared_libs: ["libadreno_utils", "libgsl", "libcutils", "libdl", "libz", "liblog", "libc++", "libc", "libm", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "egl",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libGLESv1_CM_adreno",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so"],
-			shared_libs: ["libgsl", "libcutils", "libdl", "libz", "liblog", "libc++", "libc", "libm", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "egl",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libGLESv2_adreno",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/egl/libGLESv2_adreno.so"],
-			shared_libs: ["libadreno_utils", "libgsl", "libllvm-glnext", "libcutils", "libdl", "libz", "liblog", "libc++", "libc", "libm", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "egl",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libq3dtools_adreno",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/egl/libq3dtools_adreno.so"],
-			shared_libs: ["libcutils", "liblog", "libgsl", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "egl",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libq3dtools_esx",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/egl/libq3dtools_esx.so"],
-			shared_libs: ["libcutils", "liblog", "libz", "libdl", "libc++", "libc", "libm", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "egl",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "android.hardware.gnss@2.1-impl-qti",
 	owner: "samsung",
 	strip: {
@@ -3132,24 +3304,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vulkan.adreno",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/vulkan.adreno.so"],
-			shared_libs: ["libadreno_utils", "libgsl", "libz", "liblog", "libllvm-glnext", "libcutils", "libhardware", "libnativewindow", "vendor.qti.hardware.display.mapper@2.0", "android.hardware.graphics.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "android.hardware.graphics.mapper@3.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libhidlbase", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libAlacSwDec",
 	owner: "samsung",
 	strip: {
@@ -3193,40 +3347,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libBeauty_v4.camera.samsung.so"],
 			shared_libs: ["libHprFace_GAE_api.camera.samsung", "libcutils", "libbeautyshot.arcsoft", "libFace_Landmark_API.camera.samsung", "libc++", "liblog", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libC2D2",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libC2D2.so"],
-			shared_libs: ["libgsl", "libcutils", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libCB",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libCB.so"],
-			shared_libs: ["libcutils", "liblog", "libgsl", "libutils", "libnativewindow", "libvndksupport", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.mapper@4.0", "android.hardware.graphics.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libhidlbase", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -3456,23 +3576,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libadreno_utils",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libadreno_utils.so"],
-			shared_libs: ["libgsl", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libarcsoft_multi_frame_video_hdr",
 	owner: "samsung",
 	strip: {
@@ -3589,23 +3692,6 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "64",
 	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libc2d30_bltlib",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libc2d30_bltlib.so"],
-			shared_libs: ["libgsl", "libcutils", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
 	prefer: true,
 	soc_specific: true,
 }
@@ -3979,7 +4065,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libdisplayqos.so"],
-			shared_libs: ["libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libdisplaydebug", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -4340,23 +4426,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libgps.utils.so"],
 			shared_libs: ["libutils", "libcutils", "liblog", "libprocessgroup", "libsemnativecarrierfeature", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libgsl",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libgsl.so"],
-			shared_libs: ["libcutils", "liblog", "libz", "libsync", "libion", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -4817,23 +4886,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/liblivefocus_preview_interface.so"],
 			shared_libs: ["liblog", "libcutils", "liblivefocus_preview_engine", "libuniplugin", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libllvm-glnext",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libllvm-glnext.so"],
-			shared_libs: ["libgsl", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -5522,15 +5574,15 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libqservice",
+	name: "libqseed3",
 	owner: "samsung",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqservice.so"],
-			shared_libs: ["liblog", "libcutils", "libutils", "libbinder", "libc++", "libc", "libm", "libdl", ],
+			srcs: ["proprietary/vendor/lib64/libqseed3.so"],
+			shared_libs: ["libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -5780,6 +5832,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libsdm-colormgr-algo",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsdm-colormgr-algo.so"],
+			shared_libs: ["liblog", "libdisplaydebug", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libsdm-diag",
 	owner: "samsung",
 	strip: {
@@ -5823,23 +5892,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libsdmextension.so"],
 			shared_libs: ["libdisplaydebug", "libsdmutils", "libdisplayqos", "libsdm-color", "libdisplayskuutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libsdmutils",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsdmutils.so"],
-			shared_libs: ["libdisplaydebug", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -6948,6 +7000,23 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so"],
 			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@3.0", "libcamera_metadata", "libhidlbase", "libhidltransport", "libutils", "vendor.qti.hardware.camera.postproc@1.0", "libz", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.qti.qspmhal@1.0-impl",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.qti.qspmhal@1.0-impl.so"],
+			shared_libs: ["libutils", "vendor.qti.qspmhal@1.0", "android.hidl.allocator@1.0", "android.hidl.memory@1.0", "libhidlbase", "libhidlmemory", "liblog", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -8207,6 +8276,23 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+	name: "vendor.qti.qspmhal@1.0-service",
+	owner: "samsung",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/vendor.qti.qspmhal@1.0-service"],
+			shared_libs: ["vendor.qti.qspmhal@1.0", "vendor.qti.qspmhal@1.0-impl", "libhidlbase", "liblog", "libutils", "libavservices_minijail", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
 	name: "xtra-daemon",
 	owner: "samsung",
 	target: {
@@ -8221,5 +8307,47 @@ cc_prebuilt_binary {
 	},
 	prefer: true,
 	soc_specific: true,
+}
+
+install_symlink {
+	name: "libEGL_adreno_libEGL_adreno_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libEGL_adreno.so",
+	symlink_target: "/vendor/lib/egl/libEGL_adreno.so",
+}
+
+install_symlink {
+	name: "libGLESv2_adreno_libGLESv2_adreno_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libGLESv2_adreno.so",
+	symlink_target: "/vendor/lib/egl/libGLESv2_adreno.so",
+}
+
+install_symlink {
+	name: "libq3dtools_adreno_libq3dtools_adreno_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libq3dtools_adreno.so",
+	symlink_target: "/vendor/lib/egl/libq3dtools_adreno.so",
+}
+
+install_symlink {
+	name: "libEGL_adreno_libEGL_adreno_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libEGL_adreno.so",
+	symlink_target: "/vendor/lib64/egl/libEGL_adreno.so",
+}
+
+install_symlink {
+	name: "libGLESv2_adreno_libGLESv2_adreno_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libGLESv2_adreno.so",
+	symlink_target: "/vendor/lib64/egl/libGLESv2_adreno.so",
+}
+
+install_symlink {
+	name: "libq3dtools_adreno_libq3dtools_adreno_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libq3dtools_adreno.so",
+	symlink_target: "/vendor/lib64/egl/libq3dtools_adreno.so",
 }
 

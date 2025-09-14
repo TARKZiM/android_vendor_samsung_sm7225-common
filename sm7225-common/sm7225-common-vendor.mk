@@ -43,6 +43,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@2.2-service.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
+    vendor/samsung/sm7225-common/proprietary/vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal@1.0-service.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/vendor.samsung.hardware.snap@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.snap@1.2-service.rc \
@@ -74,6 +75,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/sec_config_oem:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config_oem \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
+    vendor/samsung/sm7225-common/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/sensors/config/bitra_ak991x_2.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bitra_ak991x_2.json \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/sensors/config/bitra_ak991x_6.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bitra_ak991x_6.json \
@@ -136,6 +138,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     btaudio_offload_if \
     com.qualcomm.qti.ant@1.0 \
+    eglSubDriverAndroid \
+    libEGL_adreno \
+    libGLESv1_CM_adreno \
+    libGLESv2_adreno \
+    libq3dtools_adreno \
+    libq3dtools_esx \
     android.hardware.bluetooth@1.0-impl-qti \
     audio.bluetooth_qti.default \
     vendor.qti.hardware.audiohalext@1.0-impl \
@@ -145,6 +153,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.samsung.hardware.bluetooth.a2dp@1.0-impl \
+    vulkan.adreno \
+    libC2D2 \
+    libCB \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
@@ -158,6 +169,8 @@ PRODUCT_PACKAGES += \
     libacdbloader \
     libacdbrtac \
     libadiertac \
+    libadreno_app_profiles \
+    libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
     libaudcal \
@@ -167,6 +180,7 @@ PRODUCT_PACKAGES += \
     libbthost_if \
     libbtnv \
     libc++_shared \
+    libc2d30_bltlib \
     libcacertclient \
     libcpion \
     libcvp_common \
@@ -182,7 +196,9 @@ PRODUCT_PACKAGES += \
     libgcs-osal \
     libgcs \
     libgpudataproducer \
+    libgsl \
     libimagecodec_native.quram \
+    libllvm-glnext \
     libllvm-qcom \
     liblowi_client \
     libmdsprpc \
@@ -200,7 +216,6 @@ PRODUCT_PACKAGES += \
     libqisl \
     libqrtr \
     libqsap_sdk \
-    libqseed3 \
     libqti-iopd-client \
     libqti-iopd \
     libqti-perfd-client \
@@ -208,7 +223,6 @@ PRODUCT_PACKAGES += \
     libqtigef \
     librpmb \
     libsavscmn \
-    libsdm-colormgr-algo \
     libsdsprpc \
     libsecaudiocoreutils \
     libsecaudioinfo \
@@ -244,6 +258,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.3 \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.memory.pasrmanager@1.1 \
+    vendor.qti.qspmhal@1.0 \
     vendor.samsung.hardware.bluetooth.a2dp@1.0 \
     vendor.samsung.hardware.bluetooth@2.0 \
     audio.primary.lito \
@@ -275,12 +290,6 @@ PRODUCT_PACKAGES += \
     com.qti.feature2.serializer \
     com.qti.feature2.stub \
     com.qti.feature2.swmf \
-    eglSubDriverAndroid \
-    libEGL_adreno \
-    libGLESv1_CM_adreno \
-    libGLESv2_adreno \
-    libq3dtools_adreno \
-    libq3dtools_esx \
     android.hardware.gnss@2.1-impl-qti \
     camera.qcom \
     camera.unihal.default \
@@ -289,12 +298,9 @@ PRODUCT_PACKAGES += \
     lights.lito \
     vendor.samsung.hardware.gnss@2.0-impl-sec \
     vendor.samsung.hardware.snap@1.2-impl \
-    vulkan.adreno \
     libAlacSwDec \
     libApeSwDec \
     libBeauty_v4.camera.samsung \
-    libC2D2 \
-    libCB \
     libDLInterface.camera.samsung \
     libDualCamBokehCapture.camera.samsung \
     libFacePreProcessing.camera.samsung \
@@ -308,7 +314,6 @@ PRODUCT_PACKAGES += \
     libOmxBlackBar \
     libOpenCv.camera.samsung \
     libSNPE \
-    libadreno_utils \
     libarcsoft_multi_frame_video_hdr \
     libarcsoft_object_tracking \
     libarcsoft_picportrait_video \
@@ -316,7 +321,6 @@ PRODUCT_PACKAGES += \
     libbatching \
     libbeautyshot.arcsoft \
     libbitmlengine \
-    libc2d30_bltlib \
     libcamera_nn_stub \
     libcamerapostproc \
     libcamxexternalformatutils \
@@ -360,7 +364,6 @@ PRODUCT_PACKAGES += \
     libgnss \
     libgnsspps \
     libgps.utils \
-    libgsl \
     libhand_interaction.uniplugin@1.0 \
     libhandgesture.arcsoft \
     libhdr_tm \
@@ -388,7 +391,6 @@ PRODUCT_PACKAGES += \
     liblivefocus_capture_interface \
     liblivefocus_preview_engine \
     liblivefocus_preview_interface \
-    libllvm-glnext \
     libloc_api_v02 \
     libloc_core \
     libloc_socket \
@@ -429,7 +431,7 @@ PRODUCT_PACKAGES += \
     libqmiextservices \
     libqmiservices-sem-ext \
     libqmiservices \
-    libqservice \
+    libqseed3 \
     libqsocket \
     libqti-perfd \
     libqti-utils \
@@ -444,10 +446,10 @@ PRODUCT_PACKAGES += \
     libscveObjectTracker \
     libscveObjectTracker_stub \
     libsdm-color \
+    libsdm-colormgr-algo \
     libsdm-diag \
     libsdm-disp-vndapis \
     libsdmextension \
-    libsdmutils \
     libsec-ril \
     libsecril-client \
     libsegmentationeffect.uniplugin@1.0 \
@@ -513,6 +515,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@3.0 \
     vendor.qti.gnss@4.0 \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
+    vendor.qti.qspmhal@1.0-impl \
     vendor.samsung.hardware.camera.device@5.0-impl \
     vendor.samsung.hardware.camera.device@5.0 \
     vendor.samsung.hardware.camera.provider@4.0-legacy \
@@ -594,4 +597,13 @@ PRODUCT_PACKAGES += \
     tftp_server \
     thermal-engine \
     time_daemon \
+    vendor.qti.qspmhal@1.0-service \
     xtra-daemon
+
+PRODUCT_PACKAGES += \
+    libEGL_adreno_libEGL_adreno_symlink32 \
+    libGLESv2_adreno_libGLESv2_adreno_symlink32 \
+    libq3dtools_adreno_libq3dtools_adreno_symlink32 \
+    libEGL_adreno_libEGL_adreno_symlink64 \
+    libGLESv2_adreno_libGLESv2_adreno_symlink64 \
+    libq3dtools_adreno_libq3dtools_adreno_symlink64
