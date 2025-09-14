@@ -287,7 +287,6 @@ PRODUCT_PACKAGES += \
     com.qti.chi.override \
     gatekeeper.mdfpp \
     lights.lito \
-    vendor.samsung.hardware.camera.provider@4.0-impl \
     vendor.samsung.hardware.gnss@2.0-impl-sec \
     vendor.samsung.hardware.snap@1.2-impl \
     vulkan.adreno \
@@ -444,11 +443,9 @@ PRODUCT_PACKAGES += \
     libscveObjectSegmentation_stub \
     libscveObjectTracker \
     libscveObjectTracker_stub \
-    libsdedrm \
     libsdm-color \
     libsdm-diag \
     libsdm-disp-vndapis \
-    libsdmcore \
     libsdmextension \
     libsdmutils \
     libsec-ril \
