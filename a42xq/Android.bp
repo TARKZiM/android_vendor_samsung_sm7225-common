@@ -170,14 +170,15 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libsynaFpSensorTestNwd.so"],
-			shared_libs: ["libshim_idiv0", "liblog", "libdl", "libc", ],
+			shared_libs: ["liblog", "libdl", "libc", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libsynaFpSensorTestNwd.so"],
-			shared_libs: ["libshim_idiv0", "liblog", "libdl", "libc", ],
+			shared_libs: ["liblog", "libdl", "libc", ],
 		},
 	},
 	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
