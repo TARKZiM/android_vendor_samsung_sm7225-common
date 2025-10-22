@@ -372,7 +372,6 @@ PRODUCT_PACKAGES += \
     libhistogram \
     libhta \
     libhta_hexagon_runtime \
-    libhyper \
     libhypermotion_core \
     libhypermotion_interface \
     libhypervintf \
