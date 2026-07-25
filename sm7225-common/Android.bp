@@ -5884,14 +5884,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libsec-ril",
+	name: "libsec-ril-impl",
 	owner: "samsung",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsec-ril.so"],
+			srcs: ["proprietary/vendor/lib64/libsec-ril-impl.so"],
 			shared_libs: ["liblog", "libcutils", "libril_sem", "libnetutils", "libsqlite", "libhardware_legacy", "libcrypto", "librilutils", "libxml2", "libz", "libutils", "libhidlbase", "libhidltransport", "libhwbinder", "libjsoncpp", "libvkmanager_vendor", "libengmode_client", "vendor.samsung.hardware.radio.channel@2.0", "libsecnativefeature", "libfloatingfeature", "libsemnativecarrierfeature", "libtime_genoff", "libmdmdetect", "libdsutils", "librmnetctl", "libconfigdb", "libperipheral_client", "libqmi_cci", "libqmi_client_helper", "libdsi_netctrl", "libqmi", "libqmiservices", "libqmiextservices", "libqmiservices-sem-ext", "libidl", "libdiag", "libc++", "libprotobuf-cpp-full-3.9.1-vendorcompat", "libc", "libm", "libdl", ],
 		},
 	},

@@ -466,7 +466,7 @@ PRODUCT_PACKAGES += \
     libsdm-diag \
     libsdm-disp-vndapis \
     libsdmextension \
-    libsec-ril \
+    libsec-ril-impl \
     libsecril-client \
     libsegmentationeffect.uniplugin@1.0 \
     libsemnativecarrierfeature \
